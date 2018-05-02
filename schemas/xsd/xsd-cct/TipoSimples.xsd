@@ -93,7 +93,7 @@
 	</simpleType>
 
 	<simpleType name="ViaTransporte">
-		<restriction base="integer">
+		<restriction base="string">
 			<pattern value="[0-9]{2}" />
 		</restriction>
 	</simpleType>

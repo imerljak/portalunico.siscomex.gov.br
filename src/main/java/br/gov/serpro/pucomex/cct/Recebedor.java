@@ -56,7 +56,7 @@ public class Recebedor {
     @XmlElement(namespace = "http://www.pucomex.serpro.gov.br/cct")
     protected String nomeEstrangeiro;
     @XmlElement(namespace = "http://www.pucomex.serpro.gov.br/cct")
-    protected BigInteger viaTransporte;
+    protected String viaTransporte;
     @XmlElement(namespace = "http://www.pucomex.serpro.gov.br/cct")
     protected String baldeacaoOuTransbordo;
     @XmlElement(namespace = "http://www.pucomex.serpro.gov.br/cct")
@@ -139,10 +139,10 @@ public class Recebedor {
      * 
      * @return
      *     possible object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public BigInteger getViaTransporte() {
+    public String getViaTransporte() {
         return viaTransporte;
     }
 
@@ -151,10 +151,10 @@ public class Recebedor {
      * 
      * @param value
      *     allowed object is
-     *     {@link BigInteger }
+     *     {@link String }
      *     
      */
-    public void setViaTransporte(BigInteger value) {
+    public void setViaTransporte(String value) {
         this.viaTransporte = value;
     }
 
