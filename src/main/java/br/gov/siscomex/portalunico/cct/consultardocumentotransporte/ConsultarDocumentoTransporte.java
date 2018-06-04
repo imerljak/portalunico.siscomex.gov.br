@@ -38,9 +38,9 @@ public class ConsultarDocumentoTransporte {
     @SerializedName("dataEmissaoDocumentoTransporte")
     @Expose
     private String dataEmissaoDocumentoTransporte;
-    @SerializedName("listaMensagem")
+    @SerializedName("mensagens")
     @Expose
-    private List<ListaMensagem> listaMensagem = new ArrayList<ListaMensagem>();
+    private List<Mensagens> mensagens = new ArrayList<Mensagens>();
 
     public String getNumeroDocumento() {
         return numeroDocumento;
@@ -122,12 +122,12 @@ public class ConsultarDocumentoTransporte {
         this.dataEmissaoDocumentoTransporte = dataEmissaoDocumentoTransporte;
     }
 
-    public List<ListaMensagem> getListaMensagem() {
-        return listaMensagem;
+    public List<Mensagens> getMensagens() {
+        return mensagens;
     }
 
-    public void setListaMensagem(List<ListaMensagem> listaMensagem) {
-        this.listaMensagem = listaMensagem;
+    public void setMensagens(List<Mensagens> mensagens) {
+        this.mensagens = mensagens;
     }
 
     @Override
@@ -174,9 +174,9 @@ public class ConsultarDocumentoTransporte {
         sb.append('=');
         sb.append(((this.dataEmissaoDocumentoTransporte == null)?"<null>":this.dataEmissaoDocumentoTransporte));
         sb.append(',');
-        sb.append("listaMensagem");
+        sb.append("mensagens");
         sb.append('=');
-        sb.append(((this.listaMensagem == null)?"<null>":this.listaMensagem));
+        sb.append(((this.mensagens == null)?"<null>":this.mensagens));
         sb.append(',');
         if (sb.charAt((sb.length()- 1)) == ',') {
             sb.setCharAt((sb.length()- 1), ']');
@@ -191,7 +191,7 @@ public class ConsultarDocumentoTransporte {
         int result = 1;
         result = ((result* 31)+((this.tipoDocumento == null)? 0 :this.tipoDocumento.hashCode()));
         result = ((result* 31)+((this.prefixoTrem == null)? 0 :this.prefixoTrem.hashCode()));
-        result = ((result* 31)+((this.listaMensagem == null)? 0 :this.listaMensagem.hashCode()));
+        result = ((result* 31)+((this.mensagens == null)? 0 :this.mensagens.hashCode()));
         result = ((result* 31)+((this.dataEmissaoDocumentoTransporte == null)? 0 :this.dataEmissaoDocumentoTransporte.hashCode()));
         result = ((result* 31)+((this.veiculoRodoviario == null)? 0 :this.veiculoRodoviario.hashCode()));
         result = ((result* 31)+((this.cargas == null)? 0 :this.cargas.hashCode()));
@@ -212,7 +212,7 @@ public class ConsultarDocumentoTransporte {
             return false;
         }
         ConsultarDocumentoTransporte rhs = ((ConsultarDocumentoTransporte) other);
-        return ((((((((((((this.tipoDocumento == rhs.tipoDocumento)||((this.tipoDocumento!= null)&&this.tipoDocumento.equals(rhs.tipoDocumento)))&&((this.prefixoTrem == rhs.prefixoTrem)||((this.prefixoTrem!= null)&&this.prefixoTrem.equals(rhs.prefixoTrem))))&&((this.listaMensagem == rhs.listaMensagem)||((this.listaMensagem!= null)&&this.listaMensagem.equals(rhs.listaMensagem))))&&((this.dataEmissaoDocumentoTransporte == rhs.dataEmissaoDocumentoTransporte)||((this.dataEmissaoDocumentoTransporte!= null)&&this.dataEmissaoDocumentoTransporte.equals(rhs.dataEmissaoDocumentoTransporte))))&&((this.veiculoRodoviario == rhs.veiculoRodoviario)||((this.veiculoRodoviario!= null)&&this.veiculoRodoviario.equals(rhs.veiculoRodoviario))))&&((this.cargas == rhs.cargas)||((this.cargas!= null)&&this.cargas.equals(rhs.cargas))))&&((this.numeroDocumento == rhs.numeroDocumento)||((this.numeroDocumento!= null)&&this.numeroDocumento.equals(rhs.numeroDocumento))))&&((this.quantidadeVagoes == rhs.quantidadeVagoes)||((this.quantidadeVagoes!= null)&&this.quantidadeVagoes.equals(rhs.quantidadeVagoes))))&&((this.viaTransporte == rhs.viaTransporte)||((this.viaTransporte!= null)&&this.viaTransporte.equals(rhs.viaTransporte))))&&((this.situacaoDocumento == rhs.situacaoDocumento)||((this.situacaoDocumento!= null)&&this.situacaoDocumento.equals(rhs.situacaoDocumento))))&&((this.identificacaoVeiculo == rhs.identificacaoVeiculo)||((this.identificacaoVeiculo!= null)&&this.identificacaoVeiculo.equals(rhs.identificacaoVeiculo))));
+        return ((((((((((((this.tipoDocumento == rhs.tipoDocumento)||((this.tipoDocumento!= null)&&this.tipoDocumento.equals(rhs.tipoDocumento)))&&((this.prefixoTrem == rhs.prefixoTrem)||((this.prefixoTrem!= null)&&this.prefixoTrem.equals(rhs.prefixoTrem))))&&((this.mensagens == rhs.mensagens)||((this.mensagens != null)&&this.mensagens.equals(rhs.mensagens))))&&((this.dataEmissaoDocumentoTransporte == rhs.dataEmissaoDocumentoTransporte)||((this.dataEmissaoDocumentoTransporte!= null)&&this.dataEmissaoDocumentoTransporte.equals(rhs.dataEmissaoDocumentoTransporte))))&&((this.veiculoRodoviario == rhs.veiculoRodoviario)||((this.veiculoRodoviario!= null)&&this.veiculoRodoviario.equals(rhs.veiculoRodoviario))))&&((this.cargas == rhs.cargas)||((this.cargas!= null)&&this.cargas.equals(rhs.cargas))))&&((this.numeroDocumento == rhs.numeroDocumento)||((this.numeroDocumento!= null)&&this.numeroDocumento.equals(rhs.numeroDocumento))))&&((this.quantidadeVagoes == rhs.quantidadeVagoes)||((this.quantidadeVagoes!= null)&&this.quantidadeVagoes.equals(rhs.quantidadeVagoes))))&&((this.viaTransporte == rhs.viaTransporte)||((this.viaTransporte!= null)&&this.viaTransporte.equals(rhs.viaTransporte))))&&((this.situacaoDocumento == rhs.situacaoDocumento)||((this.situacaoDocumento!= null)&&this.situacaoDocumento.equals(rhs.situacaoDocumento))))&&((this.identificacaoVeiculo == rhs.identificacaoVeiculo)||((this.identificacaoVeiculo!= null)&&this.identificacaoVeiculo.equals(rhs.identificacaoVeiculo))));
     }
 
 }
