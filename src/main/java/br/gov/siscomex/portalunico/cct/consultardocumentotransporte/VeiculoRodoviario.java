@@ -33,42 +33,27 @@ public class VeiculoRodoviario {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(VeiculoRodoviario.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
-        sb.append("veiculo");
-        sb.append('=');
-        sb.append(((this.veiculo == null)?"<null>":this.veiculo));
-        sb.append(',');
-        sb.append("reboques");
-        sb.append('=');
-        sb.append(((this.reboques == null)?"<null>":this.reboques));
-        sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
-        } else {
-            sb.append(']');
-        }
-        return sb.toString();
+        return "VeiculoRodoviario{" +
+                "veiculo=" + veiculo +
+                ", reboques=" + reboques +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        VeiculoRodoviario that = (VeiculoRodoviario) o;
+
+        if (veiculo != null ? !veiculo.equals(that.veiculo) : that.veiculo != null) return false;
+        return reboques != null ? reboques.equals(that.reboques) : that.reboques == null;
     }
 
     @Override
     public int hashCode() {
-        int result = 1;
-        result = ((result* 31)+((this.veiculo == null)? 0 :this.veiculo.hashCode()));
-        result = ((result* 31)+((this.reboques == null)? 0 :this.reboques.hashCode()));
+        int result = veiculo != null ? veiculo.hashCode() : 0;
+        result = 31 * result + (reboques != null ? reboques.hashCode() : 0);
         return result;
     }
-
-    @Override
-    public boolean equals(Object other) {
-        if (other == this) {
-            return true;
-        }
-        if ((other instanceof VeiculoRodoviario) == false) {
-            return false;
-        }
-        VeiculoRodoviario rhs = ((VeiculoRodoviario) other);
-        return (((this.veiculo == rhs.veiculo)||((this.veiculo!= null)&&this.veiculo.equals(rhs.veiculo)))&&((this.reboques == rhs.reboques)||((this.reboques!= null)&&this.reboques.equals(rhs.reboques))));
-    }
-
 }

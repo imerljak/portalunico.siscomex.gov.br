@@ -72,67 +72,48 @@ public class Veiculo {
     }
 
     public void setLacres(Set<String> lacres) {
+
+
         this.lacres = lacres;
     }
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(Veiculo.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
-        sb.append("nomeCondutor");
-        sb.append('=');
-        sb.append(((this.nomeCondutor == null)?"<null>":this.nomeCondutor));
-        sb.append(',');
-        sb.append("cpfCondutor");
-        sb.append('=');
-        sb.append(((this.cpfCondutor == null)?"<null>":this.cpfCondutor));
-        sb.append(',');
-        sb.append("documentoCondutor");
-        sb.append('=');
-        sb.append(((this.documentoCondutor == null)?"<null>":this.documentoCondutor));
-        sb.append(',');
-        sb.append("placa");
-        sb.append('=');
-        sb.append(((this.placa == null)?"<null>":this.placa));
-        sb.append(',');
-        sb.append("tara");
-        sb.append('=');
-        sb.append(((this.tara == null)?"<null>":this.tara));
-        sb.append(',');
-        sb.append("lacres");
-        sb.append('=');
-        sb.append(((this.lacres == null)?"<null>":this.lacres));
-        sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
-        } else {
-            sb.append(']');
-        }
-        return sb.toString();
+        return "Veiculo{" +
+                "nomeCondutor='" + nomeCondutor + '\'' +
+                ", cpfCondutor='" + cpfCondutor + '\'' +
+                ", documentoCondutor='" + documentoCondutor + '\'' +
+                ", placa='" + placa + '\'' +
+                ", tara=" + tara +
+                ", lacres=" + lacres +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Veiculo veiculo = (Veiculo) o;
+
+        if (nomeCondutor != null ? !nomeCondutor.equals(veiculo.nomeCondutor) : veiculo.nomeCondutor != null)
+            return false;
+        if (cpfCondutor != null ? !cpfCondutor.equals(veiculo.cpfCondutor) : veiculo.cpfCondutor != null) return false;
+        if (documentoCondutor != null ? !documentoCondutor.equals(veiculo.documentoCondutor) : veiculo.documentoCondutor != null)
+            return false;
+        if (placa != null ? !placa.equals(veiculo.placa) : veiculo.placa != null) return false;
+        if (tara != null ? !tara.equals(veiculo.tara) : veiculo.tara != null) return false;
+        return lacres != null ? lacres.equals(veiculo.lacres) : veiculo.lacres == null;
     }
 
     @Override
     public int hashCode() {
-        int result = 1;
-        result = ((result* 31)+((this.documentoCondutor == null)? 0 :this.documentoCondutor.hashCode()));
-        result = ((result* 31)+((this.lacres == null)? 0 :this.lacres.hashCode()));
-        result = ((result* 31)+((this.tara == null)? 0 :this.tara.hashCode()));
-        result = ((result* 31)+((this.cpfCondutor == null)? 0 :this.cpfCondutor.hashCode()));
-        result = ((result* 31)+((this.nomeCondutor == null)? 0 :this.nomeCondutor.hashCode()));
-        result = ((result* 31)+((this.placa == null)? 0 :this.placa.hashCode()));
+        int result = nomeCondutor != null ? nomeCondutor.hashCode() : 0;
+        result = 31 * result + (cpfCondutor != null ? cpfCondutor.hashCode() : 0);
+        result = 31 * result + (documentoCondutor != null ? documentoCondutor.hashCode() : 0);
+        result = 31 * result + (placa != null ? placa.hashCode() : 0);
+        result = 31 * result + (tara != null ? tara.hashCode() : 0);
+        result = 31 * result + (lacres != null ? lacres.hashCode() : 0);
         return result;
     }
-
-    @Override
-    public boolean equals(Object other) {
-        if (other == this) {
-            return true;
-        }
-        if ((other instanceof Veiculo) == false) {
-            return false;
-        }
-        Veiculo rhs = ((Veiculo) other);
-        return (((((((this.documentoCondutor == rhs.documentoCondutor)||((this.documentoCondutor!= null)&&this.documentoCondutor.equals(rhs.documentoCondutor)))&&((this.lacres == rhs.lacres)||((this.lacres!= null)&&this.lacres.equals(rhs.lacres))))&&((this.tara == rhs.tara)||((this.tara!= null)&&this.tara.equals(rhs.tara))))&&((this.cpfCondutor == rhs.cpfCondutor)||((this.cpfCondutor!= null)&&this.cpfCondutor.equals(rhs.cpfCondutor))))&&((this.nomeCondutor == rhs.nomeCondutor)||((this.nomeCondutor!= null)&&this.nomeCondutor.equals(rhs.nomeCondutor))))&&((this.placa == rhs.placa)||((this.placa!= null)&&this.placa.equals(rhs.placa))));
-    }
-
 }

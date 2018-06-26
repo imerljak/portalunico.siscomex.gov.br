@@ -44,47 +44,30 @@ public class Reboque {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(Reboque.class.getName()).append('@').append(Integer.toHexString(System.identityHashCode(this))).append('[');
-        sb.append("placa");
-        sb.append('=');
-        sb.append(((this.placa == null)?"<null>":this.placa));
-        sb.append(',');
-        sb.append("tara");
-        sb.append('=');
-        sb.append(((this.tara == null)?"<null>":this.tara));
-        sb.append(',');
-        sb.append("lacres");
-        sb.append('=');
-        sb.append(((this.lacres == null)?"<null>":this.lacres));
-        sb.append(',');
-        if (sb.charAt((sb.length()- 1)) == ',') {
-            sb.setCharAt((sb.length()- 1), ']');
-        } else {
-            sb.append(']');
-        }
-        return sb.toString();
+        return "Reboque{" +
+                "placa='" + placa + '\'' +
+                ", tara=" + tara +
+                ", lacres=" + lacres +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Reboque reboque = (Reboque) o;
+
+        if (placa != null ? !placa.equals(reboque.placa) : reboque.placa != null) return false;
+        if (tara != null ? !tara.equals(reboque.tara) : reboque.tara != null) return false;
+        return lacres != null ? lacres.equals(reboque.lacres) : reboque.lacres == null;
     }
 
     @Override
     public int hashCode() {
-        int result = 1;
-        result = ((result* 31)+((this.tara == null)? 0 :this.tara.hashCode()));
-        result = ((result* 31)+((this.lacres == null)? 0 :this.lacres.hashCode()));
-        result = ((result* 31)+((this.placa == null)? 0 :this.placa.hashCode()));
+        int result = placa != null ? placa.hashCode() : 0;
+        result = 31 * result + (tara != null ? tara.hashCode() : 0);
+        result = 31 * result + (lacres != null ? lacres.hashCode() : 0);
         return result;
     }
-
-    @Override
-    public boolean equals(Object other) {
-        if (other == this) {
-            return true;
-        }
-        if ((other instanceof Reboque) == false) {
-            return false;
-        }
-        Reboque rhs = ((Reboque) other);
-        return ((((this.tara == rhs.tara)||((this.tara!= null)&&this.tara.equals(rhs.tara)))&&((this.lacres == rhs.lacres)||((this.lacres!= null)&&this.lacres.equals(rhs.lacres))))&&((this.placa == rhs.placa)||((this.placa!= null)&&this.placa.equals(rhs.placa))));
-    }
-
 }
