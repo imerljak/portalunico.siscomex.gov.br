@@ -13,6 +13,7 @@
 			<xs:choice>
 				<xs:element name="DeclarationNFe" type="DeclarationNFe" />
 				<xs:element name="DeclarationNoNF" type="DeclarationNoNF" />
+				<xs:element name="DeclarationDrawbackIsencao" type="DeclarationDrawbackIsencao" />
 			</xs:choice>
 		</xs:complexType>
 	</xs:element>
@@ -20,7 +21,7 @@
   <!-- DU-E com Nota Fiscal Eletrônica-->
   
     <xs:complexType name="DeclarationNFe">
-      <xs:sequence>
+     <xs:sequence>
         <xs:element name="ID" type="ds:DeclarationIdentificationIDType" minOccurs="0">
           <xs:annotation>
             <xs:documentation>EX0001</xs:documentation>
@@ -34,7 +35,7 @@
                   <xs:documentation>EX0010</xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="Warehouse" minOccurs="0">
+              <xs:element name="Warehouse" minOccurs="1">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="ID" type="ds:WarehouseIdentificationIDType">
@@ -87,7 +88,7 @@
                   <xs:documentation>EX0042</xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="StatementTypeCode" type="ds:AdditionalInformationStatementTypeCodeType" minOccurs="0">
+              <xs:element name="StatementTypeCode" type="ds:AdditionalInformationStatementTypeCodeType">
                 <xs:annotation>
                   <xs:documentation>
 					EX0041
@@ -185,6 +186,11 @@
                         <xs:documentation>EX0030</xs:documentation>
                       </xs:annotation>
                     </xs:element>
+                    <xs:element name="FinancedValueAmount" type="ds:GovernmentAgencyGoodsItemFinancedValueAmountType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>EX0090</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
                     <xs:element name="SequenceNumeric" type="ds:GovernmentAgencyGoodsItemSequenceNumericType">
                       <xs:annotation>
                         <xs:documentation>EX0013</xs:documentation>
@@ -215,7 +221,7 @@
                     <xs:element name="AdditionalDocument" minOccurs="0" maxOccurs="unbounded">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="CategoryCode" type="ds:AdditionalDocumentCategoryCodeType" minOccurs="0">
+                          <xs:element name="CategoryCode" type="ds:AdditionalDocumentCategoryCodeType">
                             <xs:annotation>
                               <xs:documentation>EX0024</xs:documentation>
                             </xs:annotation>
@@ -255,7 +261,62 @@
                               <xs:documentation>EX0076</xs:documentation>
                             </xs:annotation>
                           </xs:element>
-						  <xs:element name="Invoice" minOccurs="0" maxOccurs="unbounded">
+                          <xs:element name="AdditionalInformation" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="StatementCode" type="ds:AdditionalInformationStatementCodeType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation>EX0091</xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="StatementDescription" type="ds:AdditionalInformationStatementDescriptionTextType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation>EX0092</xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="StatementTypeCode" type="ds:AdditionalInformationStatementTypeCodeType">
+                                  <xs:annotation>
+                                    <xs:documentation>
+										EX0093
+										Comprot
+                                    </xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="PreviousDocument" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="AmountAmount" type="ds:PreviousDocumentAmountAmountType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation>EX0095</xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="CategoryCode" type="ds:PreviousDocumentCategoryCodeType">
+                                  <xs:annotation>
+                                    <xs:documentation>EX0096</xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="ID" type="ds:PreviousDocumentIdentificationIDType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation>EX0097</xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="QuantityQuantity" type="ds:PreviousDocumentQuantityQuantityType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation>EX0098</xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="ItemID" type="ds:PreviousDocumentItemIDType" minOccurs="0">
+                                  <xs:annotation>
+                                    <xs:documentation>EX0099</xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Invoice" minOccurs="0" maxOccurs="unbounded">
                             <xs:complexType>
                               <xs:sequence>
                                 <xs:element name="ID" type="ds:InvoiceIdentificationIDType" minOccurs="0">
@@ -273,7 +334,7 @@
                                     <xs:documentation>EX0087</xs:documentation>
                                   </xs:annotation>
                                 </xs:element>
-                                <xs:element name="CustomsValueAmount" type="ds:GovernmentAgencyGoodsItemCustomsValueAmountType" minOccurs="0">
+                                <xs:element name="CustomsValueAmount" type="ds:InvoiceCustomsValueAmountType" minOccurs="0">
                                   <xs:annotation>
                                     <xs:documentation>EX0088</xs:documentation>
                                   </xs:annotation>
@@ -307,7 +368,7 @@
                               <xs:documentation>EX0026</xs:documentation>
                             </xs:annotation>
                           </xs:element>
-                          <xs:element name="StatementTypeCode" type="ds:AdditionalInformationStatementTypeCodeType" minOccurs="0">
+                          <xs:element name="StatementTypeCode" type="ds:AdditionalInformationStatementTypeCodeType">
                             <xs:annotation>
                               <xs:documentation>
 								EX0027
@@ -412,6 +473,11 @@
                           <xs:element name="ProductCriteriaConformance" minOccurs="0" maxOccurs="unbounded">
                             <xs:complexType>
                               <xs:sequence>
+                                <xs:element name="QuantityQuantity" type="ds:ProductCriteriaConformanceQuantityQuantityType">
+                                  <xs:annotation>
+                                    <xs:documentation>EX0094</xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
                                 <xs:element name="TypeCode" type="ds:ProductCriteriaConformanceTypeCodeType">
                                   <xs:annotation>
                                     <xs:documentation>EX0056</xs:documentation>
@@ -593,7 +659,7 @@
                   <xs:documentation>EX0010</xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="Warehouse" minOccurs="0">
+              <xs:element name="Warehouse" minOccurs="1">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="ID" type="ds:WarehouseIdentificationIDType">
@@ -646,7 +712,7 @@
                   <xs:documentation>EX0042</xs:documentation>
                 </xs:annotation>
               </xs:element>
-              <xs:element name="StatementTypeCode" type="ds:AdditionalInformationStatementTypeCodeType" minOccurs="0">
+              <xs:element name="StatementTypeCode" type="ds:AdditionalInformationStatementTypeCodeType">
                 <xs:annotation>
                   <xs:documentation>
 					EX0041
@@ -676,7 +742,7 @@
                   <xs:documentation>EX0003</xs:documentation>
                 </xs:annotation>
               </xs:element>
-			  <xs:element name="Contact" minOccurs="0">
+              <xs:element name="Contact" minOccurs="0">
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element name="Name" type="ds:ContactNameTextType">
@@ -777,6 +843,11 @@
                         <xs:documentation>EX0030</xs:documentation>
                       </xs:annotation>
                     </xs:element>
+                    <xs:element name="FinancedValueAmount" type="ds:GovernmentAgencyGoodsItemFinancedValueAmountType" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>EX0090</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
                     <xs:element name="SequenceNumeric" type="ds:GovernmentAgencyGoodsItemSequenceNumericType">
                       <xs:annotation>
                         <xs:documentation>EX0013</xs:documentation>
@@ -807,7 +878,7 @@
                     <xs:element name="AdditionalDocument" minOccurs="0" maxOccurs="unbounded">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element name="CategoryCode" type="ds:AdditionalDocumentCategoryCodeType" minOccurs="0">
+                          <xs:element name="CategoryCode" type="ds:AdditionalDocumentCategoryCodeType">
                             <xs:annotation>
                               <xs:documentation>EX0024</xs:documentation>
                             </xs:annotation>
@@ -815,26 +886,6 @@
                           <xs:element name="ID" type="ds:AdditionalDocumentIdentificationIDType" minOccurs="0">
                             <xs:annotation>
                               <xs:documentation>EX0023</xs:documentation>
-                            </xs:annotation>
-                          </xs:element>
-						  <xs:element name="DrawbackHsClassification" type="ds:AdditionalDocumentDrawbackHsClassificationTextType" minOccurs="0">
-                            <xs:annotation>
-                              <xs:documentation>EX0083</xs:documentation>
-                            </xs:annotation>
-                          </xs:element>
-                          <xs:element name="DrawbackRecipientId" type="ds:AdditionalDocumentDrawbackRecipientIdTextType" minOccurs="0">
-                            <xs:annotation>
-                              <xs:documentation>EX0084</xs:documentation>
-                            </xs:annotation>
-                          </xs:element>
-                          <xs:element name="ValueWithoutExchangeCoverAmount" type="ds:AdditionalDocumentValueWithoutExchangeCoverAmountType" minOccurs="0">
-                            <xs:annotation>
-                              <xs:documentation>EX0078</xs:documentation>
-                            </xs:annotation>
-                          </xs:element>
-                          <xs:element name="ValueWithExchangeCoverAmount" type="ds:AdditionalDocumentValueWithExchangeCoverAmountType" minOccurs="0">
-                            <xs:annotation>
-                              <xs:documentation>EX0077</xs:documentation>
                             </xs:annotation>
                           </xs:element>
                           <xs:element name="ItemID" type="ds:AdditionalDocumentItemIDType" minOccurs="0">
@@ -847,32 +898,25 @@
                               <xs:documentation>EX0076</xs:documentation>
                             </xs:annotation>
                           </xs:element>
-						  <xs:element name="Invoice" minOccurs="0" maxOccurs="unbounded">
+                          <xs:element name="AdditionalInformation" minOccurs="0">
                             <xs:complexType>
                               <xs:sequence>
-                                <xs:element name="ID" type="ds:InvoiceIdentificationIDType" minOccurs="0">
+                                <xs:element name="StatementCode" type="ds:AdditionalInformationStatementCodeType" minOccurs="0">
                                   <xs:annotation>
-                                    <xs:documentation>EX0085</xs:documentation>
+                                    <xs:documentation>EX0091</xs:documentation>
                                   </xs:annotation>
                                 </xs:element>
-                                <xs:element name="IssueDateTime" type="ds:InvoiceIssueDateTimeType" minOccurs="0">
+                                <xs:element name="StatementDescription" type="ds:AdditionalInformationStatementDescriptionTextType" minOccurs="0">
                                   <xs:annotation>
-                                    <xs:documentation>EX0086</xs:documentation>
+                                    <xs:documentation>EX0092</xs:documentation>
                                   </xs:annotation>
                                 </xs:element>
-                                <xs:element name="TypeCode" type="ds:InvoiceTypeCodeType" minOccurs="0">
+                                <xs:element name="StatementTypeCode" type="ds:AdditionalInformationStatementTypeCodeType">
                                   <xs:annotation>
-                                    <xs:documentation>EX0087</xs:documentation>
-                                  </xs:annotation>
-                                </xs:element>
-                                <xs:element name="CustomsValueAmount" type="ds:GovernmentAgencyGoodsItemCustomsValueAmountType" minOccurs="0">
-                                  <xs:annotation>
-                                    <xs:documentation>EX0088</xs:documentation>
-                                  </xs:annotation>
-                                </xs:element>
-                                <xs:element name="QuantityQuantity" type="ds:InvoiceQuantityQuantityType" minOccurs="0">
-                                  <xs:annotation>
-                                    <xs:documentation>EX0089</xs:documentation>
+                                    <xs:documentation>
+										EX0093
+										Comprot
+                                    </xs:documentation>
                                   </xs:annotation>
                                 </xs:element>
                               </xs:sequence>
@@ -899,7 +943,7 @@
                               <xs:documentation>EX0026</xs:documentation>
                             </xs:annotation>
                           </xs:element>
-                          <xs:element name="StatementTypeCode" type="ds:AdditionalInformationStatementTypeCodeType" minOccurs="0">
+                          <xs:element name="StatementTypeCode" type="ds:AdditionalInformationStatementTypeCodeType">
                             <xs:annotation>
                               <xs:documentation>
 								EX0027
@@ -1000,6 +1044,11 @@
                           <xs:element name="ProductCriteriaConformance" minOccurs="0" maxOccurs="unbounded">
                             <xs:complexType>
                               <xs:sequence>
+                                <xs:element name="QuantityQuantity" type="ds:ProductCriteriaConformanceQuantityQuantityType">
+                                  <xs:annotation>
+                                    <xs:documentation>EX0094</xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
                                 <xs:element name="TypeCode" type="ds:ProductCriteriaConformanceTypeCodeType">
                                   <xs:annotation>
                                     <xs:documentation>EX0056</xs:documentation>
@@ -1119,7 +1168,7 @@
                               <xs:documentation>EX0067</xs:documentation>
                             </xs:annotation>
                           </xs:element>
-                          <xs:element name="StatementTypeCode" type="ds:AdditionalInformationStatementTypeCodeType" minOccurs="0">
+                          <xs:element name="StatementTypeCode" type="ds:AdditionalInformationStatementTypeCodeType">
                             <xs:annotation>
                               <xs:documentation>EX0068</xs:documentation>
                             </xs:annotation>
@@ -1151,6 +1200,113 @@
                 <xs:annotation>
                   <xs:documentation>EX0002</xs:documentation>
                 </xs:annotation>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+  </xs:complexType>
+    
+  <!-- Mensagem para vincular ato concessório de Drawback Inseção a um item de DU-E -->
+  
+   <xs:complexType name="DeclarationDrawbackIsencao">
+        <xs:sequence>
+        <xs:element name="GoodsShipment" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GovernmentAgencyGoodsItem" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="SequenceNumeric" type="ds:GovernmentAgencyGoodsItemSequenceNumericType">
+                      <xs:annotation>
+                        <xs:documentation>EX0013</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    <xs:element name="AdditionalDocument" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CategoryCode" type="ds:AdditionalDocumentCategoryCodeType">
+                            <xs:annotation>
+                              <xs:documentation>EX0024</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="ID" type="ds:AdditionalDocumentIdentificationIDType">
+                            <xs:annotation>
+                              <xs:documentation>EX0023</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="DrawbackHsClassification" type="ds:AdditionalDocumentDrawbackHsClassificationTextType">
+                            <xs:annotation>
+                              <xs:documentation>EX0083</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="DrawbackRecipientId" type="ds:AdditionalDocumentDrawbackRecipientIdTextType">
+                            <xs:annotation>
+                              <xs:documentation>EX0084</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="ValueWithExchangeCoverAmount" type="ds:AdditionalDocumentValueWithExchangeCoverAmountType">
+                            <xs:annotation>
+                              <xs:documentation>EX0077</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="ItemID" type="ds:AdditionalDocumentItemIDType" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>EX0075</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="QuantityQuantity" type="ds:AdditionalDocumentQuantityQuantityType">
+                            <xs:annotation>
+                              <xs:documentation>EX0076</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          <xs:element name="Invoice" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ID" type="ds:InvoiceIdentificationIDType">
+                                  <xs:annotation>
+                                    <xs:documentation>EX0085</xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="IssueDateTime" type="ds:InvoiceIssueDateTimeType">
+                                  <xs:annotation>
+                                    <xs:documentation>EX0086</xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="TypeCode" type="ds:InvoiceTypeCodeType">
+                                  <xs:annotation>
+                                    <xs:documentation>EX0087</xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="CustomsValueAmount" type="ds:InvoiceCustomsValueAmountType">
+                                  <xs:annotation>
+                                    <xs:documentation>EX0088</xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                                <xs:element name="QuantityQuantity" type="ds:InvoiceQuantityQuantityType">
+                                  <xs:annotation>
+                                    <xs:documentation>EX0089</xs:documentation>
+                                  </xs:annotation>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="GovernmentProcedure" maxOccurs="4">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CurrentCode" type="ds:GovernmentProcedureCurrentCodeType">
+                            <xs:annotation>
+                              <xs:documentation>EX0032</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
               </xs:element>
             </xs:sequence>
           </xs:complexType>

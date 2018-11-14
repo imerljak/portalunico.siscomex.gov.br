@@ -1,0 +1,418 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome",
+    "definitions": {
+        "Welcome": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "bloqueio": {
+                    "type": "boolean"
+                },
+                "chaveDeAcesso": {
+                    "type": "string"
+                },
+                "dataDeRegistro": {
+                    "type": "string"
+                },
+                "embarqueEmRecintoAlfandegado": {
+                    "type": "boolean"
+                },
+                "despachoEmRecintoAlfandegado": {
+                    "type": "boolean"
+                },                 
+                "eventosDoHistorico": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/EventosDoHistorico"
+                    }
+                },
+                "impedidoDeEmbarque": {
+                    "type": "boolean"
+                },
+                "itens": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Iten"
+                    }
+                },
+                "moeda": {
+                    "$ref": "#/definitions/Moeda"
+                },
+                "numero": {
+                    "type": "string"
+                },
+                "paisImportador": {
+                    "$ref": "#/definitions/Moeda"
+                },
+                "recintoAduaneiroDeDespacho": {
+                    "$ref": "#/definitions/RecintoAduaneiroDeDespacho"
+                },
+                "ruc": {
+                    "type": "string"
+                },
+                "situacao": {
+                    "type": "string"
+                },
+                "situacoesDaCarga": {
+                    "type": "array",
+                    "items": {}
+                },
+                "tratamentoPrioritario": {
+                    "type": "boolean"
+                },
+                "unidadeLocalDeDespacho": {
+                    "$ref": "#/definitions/RecintoAduaneiroDeDespacho"
+                },
+                "unidadeLocalDeEmbarque": {
+                    "$ref": "#/definitions/RecintoAduaneiroDeDespacho"
+                },
+                "despachoEmRecintoDomiciliar": {
+                    "type": "boolean"
+                },
+                "dataDeCriacao": {
+                    "type": "string"
+                },
+                "dat": {
+                    "type": "boolean"
+                },
+                "oea": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "bloqueio",
+                "chaveDeAcesso",
+                "dat",
+                "dataDeCriacao",
+                "dataDeRegistro",
+                "despachoEmRecintoAlfandegado",
+                "despachoEmRecintoDomiciliar",
+                "embarqueEmRecintoAlfandegado",
+                "eventosDoHistorico",
+                "impedidoDeEmbarque",
+                "itens",
+                "moeda",
+                "numero",
+                "oea",
+                "paisImportador",
+                "recintoAduaneiroDeDespacho",
+                "ruc",
+                "situacao",
+                "situacoesDaCarga",
+                "tratamentoPrioritario",
+                "unidadeLocalDeDespacho",
+                "unidadeLocalDeEmbarque"
+            ],
+            "title": "Welcome"
+        },
+        "EventosDoHistorico": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "evento": {
+                    "type": "string"
+                },
+                "responsavel": {
+                    "type": "string"
+                },
+                "dataEHoraDoEvento": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "dataEHoraDoEvento",
+                "evento",
+                "responsavel"
+            ],
+            "title": "EventosDoHistorico"
+        },
+        "Iten": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "ncm": {
+                    "$ref": "#/definitions/Ncm"
+                },
+                "quantidadeNaUnidadeEstatistica": {
+                    "type": "integer"
+                },
+                "numero": {
+                    "type": "integer"
+                },
+                "pesoLiquidoTotal": {
+                    "type": "integer"
+                },
+                "valorDaMercadoriaNaCondicaoDeVenda": {
+                    "type": "number"
+                },
+                "valorDaMercadoriaNoLocalDeEmbarque": {
+                    "type": "integer"
+                },
+                "valorDaMercadoriaNoLocalDeEmbarqueEmReais": {
+                    "type": "number"
+                },
+                "dataDeConversao": {
+                    "type": "string"
+                },
+                "itemDaNotaFiscalDeExportacao": {
+                    "$ref": "#/definitions/ItemDaNotaFiscalDeExportacao"
+                },
+                "motivoDoTratamentoPrioritario": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "exportador": {
+                    "$ref": "#/definitions/Exportador"
+                },
+                "unidadeComercializada": {
+                    "type": "string"
+                },
+                "codigoCondicaoVenda": {
+                    "$ref": "#/definitions/RecintoAduaneiroDeDespacho"
+                },
+                "nomeImportador": {
+                    "type": "string"
+                },
+                "enderecoImportador": {
+                    "type": "string"
+                },
+                "listaPaisDestino": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Moeda"
+                    }
+                }
+            },
+            "required": [
+                "codigoCondicaoVenda",
+                "dataDeConversao",
+                "enderecoImportador",
+                "exportador",
+                "itemDaNotaFiscalDeExportacao",
+                "listaPaisDestino",
+                "motivoDoTratamentoPrioritario",
+                "ncm",
+                "nomeImportador",
+                "numero",
+                "pesoLiquidoTotal",
+                "quantidadeNaUnidadeEstatistica",
+                "unidadeComercializada",
+                "valorDaMercadoriaNaCondicaoDeVenda",
+                "valorDaMercadoriaNoLocalDeEmbarque",
+                "valorDaMercadoriaNoLocalDeEmbarqueEmReais"
+            ],
+            "title": "Iten"
+        },
+        "RecintoAduaneiroDeDespacho": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "codigo": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "codigo"
+            ],
+            "title": "RecintoAduaneiroDeDespacho"
+        },
+        "Exportador": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "numeroDoDocumento": {
+                    "type": "string"
+                },
+                "tipoDoDocumento": {
+                    "type": "string"
+                },
+                "nacionalidade": {
+                    "$ref": "#/definitions/Nacionalidade"
+                },
+                "estrangeiro": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "estrangeiro",
+                "nacionalidade",
+                "numeroDoDocumento",
+                "tipoDoDocumento"
+            ],
+            "title": "Exportador"
+        },
+        "Nacionalidade": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "codigo": {
+                    "type": "integer"
+                },
+                "nome": {
+                    "type": "string"
+                },
+                "nomeResumido": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "codigo",
+                "nome",
+                "nomeResumido"
+            ],
+            "title": "Nacionalidade"
+        },
+        "ItemDaNotaFiscalDeExportacao": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "numeroDoItem": {
+                    "type": "integer"
+                },
+                "notaFiscal": {
+                    "$ref": "#/definitions/NotaFiscal"
+                },
+                "cfop": {
+                    "type": "integer"
+                },
+                "codigoDoProduto": {
+                    "type": "string"
+                },
+                "descricao": {
+                    "type": "string"
+                },
+                "quantidadeEstatistica": {
+                    "type": "integer"
+                },
+                "unidadeComercial": {
+                    "type": "string"
+                },
+                "valorTotalCalculado": {
+                    "type": "integer"
+                },
+                "ncm": {
+                    "$ref": "#/definitions/Ncm"
+                },
+                "apresentadaParaDespacho": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "apresentadaParaDespacho",
+                "cfop",
+                "codigoDoProduto",
+                "descricao",
+                "ncm",
+                "notaFiscal",
+                "numeroDoItem",
+                "quantidadeEstatistica",
+                "unidadeComercial",
+                "valorTotalCalculado"
+            ],
+            "title": "ItemDaNotaFiscalDeExportacao"
+        },
+        "Ncm": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "codigo": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "descricao": {
+                    "type": "string"
+                },
+                "unidadeMedidaEstatistica": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "codigo",
+                "descricao",
+                "unidadeMedidaEstatistica"
+            ],
+            "title": "Ncm"
+        },
+        "NotaFiscal": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "chaveDeAcesso": {
+                    "type": "string"
+                },
+                "modelo": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "serie": {
+                    "type": "integer"
+                },
+                "numeroDoDocumento": {
+                    "type": "integer"
+                },
+                "ufDoEmissor": {
+                    "type": "string"
+                },
+                "identificacaoDoEmitente": {
+                    "$ref": "#/definitions/IdentificacaoDoEmitente"
+                },
+                "finalidade": {
+                    "type": "string"
+                },
+                "quantidadeDeItens": {
+                    "type": "integer"
+                },
+                "notaFicalEletronica": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "chaveDeAcesso",
+                "finalidade",
+                "identificacaoDoEmitente",
+                "modelo",
+                "notaFicalEletronica",
+                "numeroDoDocumento",
+                "quantidadeDeItens",
+                "serie",
+                "ufDoEmissor"
+            ],
+            "title": "NotaFiscal"
+        },
+        "IdentificacaoDoEmitente": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "numero": {
+                    "type": "string"
+                },
+                "cnpj": {
+                    "type": "boolean"
+                },
+                "cpf": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "cnpj",
+                "cpf",
+                "numero"
+            ],
+            "title": "IdentificacaoDoEmitente"
+        },
+        "Moeda": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "codigo": {
+                    "type": "integer"
+                }
+            },
+            "required": [
+                "codigo"
+            ],
+            "title": "Moeda"
+        }
+    }
+}
