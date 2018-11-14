@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>imerljak</groupId>
     <artifactId>portalunico.siscomex.gov.br</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-lombok</version>
     <name>PortalUnicoSiscomex</name>
     <description>Classes da API do Portal Único de Comércio Exterior, a nova forma de interação entre as empresas
         privadas e os diversos órgãos públicos intervenientes no comércio exterior.
