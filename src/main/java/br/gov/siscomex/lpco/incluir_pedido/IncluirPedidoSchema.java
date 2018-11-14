@@ -21,12 +21,6 @@ public class IncluirPedidoSchema {
     @SerializedName("declarante")
     @Expose
     private String declarante;
-    @SerializedName("unidadeMedidaEstatistica")
-    @Expose
-    private String unidadeMedidaEstatistica;
-    @SerializedName("unidadeMedidaComercializada")
-    @Expose
-    private String unidadeMedidaComercializada;
     @SerializedName("informacaoAdicional")
     @Expose
     private String informacaoAdicional;
@@ -38,6 +32,9 @@ public class IncluirPedidoSchema {
     @Expose
     @Valid
     private List<ListaCamposFormulario> listaCamposFormulario = new ArrayList<ListaCamposFormulario>();
+    @SerializedName("unidadeMedidaComercializada")
+    @Expose
+    private String unidadeMedidaComercializada;
 
     public String getCodigoModelo() {
         return codigoModelo;
@@ -75,32 +72,6 @@ public class IncluirPedidoSchema {
 
     public IncluirPedidoSchema withDeclarante(String declarante) {
         this.declarante = declarante;
-        return this;
-    }
-
-    public String getUnidadeMedidaEstatistica() {
-        return unidadeMedidaEstatistica;
-    }
-
-    public void setUnidadeMedidaEstatistica(String unidadeMedidaEstatistica) {
-        this.unidadeMedidaEstatistica = unidadeMedidaEstatistica;
-    }
-
-    public IncluirPedidoSchema withUnidadeMedidaEstatistica(String unidadeMedidaEstatistica) {
-        this.unidadeMedidaEstatistica = unidadeMedidaEstatistica;
-        return this;
-    }
-
-    public String getUnidadeMedidaComercializada() {
-        return unidadeMedidaComercializada;
-    }
-
-    public void setUnidadeMedidaComercializada(String unidadeMedidaComercializada) {
-        this.unidadeMedidaComercializada = unidadeMedidaComercializada;
-    }
-
-    public IncluirPedidoSchema withUnidadeMedidaComercializada(String unidadeMedidaComercializada) {
-        this.unidadeMedidaComercializada = unidadeMedidaComercializada;
         return this;
     }
 
@@ -143,14 +114,27 @@ public class IncluirPedidoSchema {
         return this;
     }
 
+    public String getUnidadeMedidaComercializada() {
+        return unidadeMedidaComercializada;
+    }
+
+    public void setUnidadeMedidaComercializada(String unidadeMedidaComercializada) {
+        this.unidadeMedidaComercializada = unidadeMedidaComercializada;
+    }
+
+    public IncluirPedidoSchema withUnidadeMedidaComercializada(String unidadeMedidaComercializada) {
+        this.unidadeMedidaComercializada = unidadeMedidaComercializada;
+        return this;
+    }
+
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("codigoModelo", codigoModelo).append("importadorExportador", importadorExportador).append("declarante", declarante).append("unidadeMedidaEstatistica", unidadeMedidaEstatistica).append("unidadeMedidaComercializada", unidadeMedidaComercializada).append("informacaoAdicional", informacaoAdicional).append("listaNcm", listaNcm).append("listaCamposFormulario", listaCamposFormulario).toString();
+        return new ToStringBuilder(this).append("codigoModelo", codigoModelo).append("importadorExportador", importadorExportador).append("declarante", declarante).append("informacaoAdicional", informacaoAdicional).append("listaNcm", listaNcm).append("listaCamposFormulario", listaCamposFormulario).append("unidadeMedidaComercializada", unidadeMedidaComercializada).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(unidadeMedidaEstatistica).append(codigoModelo).append(declarante).append(informacaoAdicional).append(importadorExportador).append(unidadeMedidaComercializada).append(listaCamposFormulario).append(listaNcm).toHashCode();
+        return new HashCodeBuilder().append(codigoModelo).append(declarante).append(informacaoAdicional).append(importadorExportador).append(unidadeMedidaComercializada).append(listaCamposFormulario).append(listaNcm).toHashCode();
     }
 
     @Override
@@ -162,7 +146,7 @@ public class IncluirPedidoSchema {
             return false;
         }
         IncluirPedidoSchema rhs = ((IncluirPedidoSchema) other);
-        return new EqualsBuilder().append(unidadeMedidaEstatistica, rhs.unidadeMedidaEstatistica).append(codigoModelo, rhs.codigoModelo).append(declarante, rhs.declarante).append(informacaoAdicional, rhs.informacaoAdicional).append(importadorExportador, rhs.importadorExportador).append(unidadeMedidaComercializada, rhs.unidadeMedidaComercializada).append(listaCamposFormulario, rhs.listaCamposFormulario).append(listaNcm, rhs.listaNcm).isEquals();
+        return new EqualsBuilder().append(codigoModelo, rhs.codigoModelo).append(declarante, rhs.declarante).append(informacaoAdicional, rhs.informacaoAdicional).append(importadorExportador, rhs.importadorExportador).append(unidadeMedidaComercializada, rhs.unidadeMedidaComercializada).append(listaCamposFormulario, rhs.listaCamposFormulario).append(listaNcm, rhs.listaNcm).isEquals();
     }
 
 }

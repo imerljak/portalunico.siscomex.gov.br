@@ -5,7 +5,7 @@
 	targetNamespace="http://www.pucomex.serpro.gov.br/cct"
 	xmlns:tns="http://www.pucomex.serpro.gov.br/cct">
 
-	<include schemaLocation="./TipoSimples.xsd" />
+	<include schemaLocation="TipoSimples.xsd" />
 
 	<complexType name="Local">
 		<sequence>

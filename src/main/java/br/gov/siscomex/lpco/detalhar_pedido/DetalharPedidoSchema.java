@@ -15,6 +15,9 @@ public class DetalharPedidoSchema {
     @SerializedName("numero")
     @Expose
     private String numero;
+    @SerializedName("chaveAcesso")
+    @Expose
+    private String chaveAcesso;
     @SerializedName("codigoModelo")
     @Expose
     private String codigoModelo;
@@ -67,6 +70,19 @@ public class DetalharPedidoSchema {
 
     public DetalharPedidoSchema withNumero(String numero) {
         this.numero = numero;
+        return this;
+    }
+
+    public String getChaveAcesso() {
+        return chaveAcesso;
+    }
+
+    public void setChaveAcesso(String chaveAcesso) {
+        this.chaveAcesso = chaveAcesso;
+    }
+
+    public DetalharPedidoSchema withChaveAcesso(String chaveAcesso) {
+        this.chaveAcesso = chaveAcesso;
         return this;
     }
 
@@ -228,12 +244,12 @@ public class DetalharPedidoSchema {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("numero", numero).append("codigoModelo", codigoModelo).append("orgao", orgao).append("situacao", situacao).append("importadorExportador", importadorExportador).append("declarante", declarante).append("unidadeMedidaEstatistica", unidadeMedidaEstatistica).append("unidadeMedidaComercializada", unidadeMedidaComercializada).append("informacaoAdicional", informacaoAdicional).append("listaNcm", listaNcm).append("listaCamposFormulario", listaCamposFormulario).append("listaVinculos", listaVinculos).append("saldo", saldo).toString();
+        return new ToStringBuilder(this).append("numero", numero).append("chaveAcesso", chaveAcesso).append("codigoModelo", codigoModelo).append("orgao", orgao).append("situacao", situacao).append("importadorExportador", importadorExportador).append("declarante", declarante).append("unidadeMedidaEstatistica", unidadeMedidaEstatistica).append("unidadeMedidaComercializada", unidadeMedidaComercializada).append("informacaoAdicional", informacaoAdicional).append("listaNcm", listaNcm).append("listaCamposFormulario", listaCamposFormulario).append("listaVinculos", listaVinculos).append("saldo", saldo).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(listaVinculos).append(situacao).append(orgao).append(numero).append(codigoModelo).append(declarante).append(importadorExportador).append(saldo).append(listaCamposFormulario).append(listaNcm).append(unidadeMedidaEstatistica).append(informacaoAdicional).append(unidadeMedidaComercializada).toHashCode();
+        return new HashCodeBuilder().append(listaVinculos).append(situacao).append(orgao).append(numero).append(codigoModelo).append(declarante).append(importadorExportador).append(saldo).append(listaCamposFormulario).append(listaNcm).append(unidadeMedidaEstatistica).append(chaveAcesso).append(informacaoAdicional).append(unidadeMedidaComercializada).toHashCode();
     }
 
     @Override
@@ -245,7 +261,7 @@ public class DetalharPedidoSchema {
             return false;
         }
         DetalharPedidoSchema rhs = ((DetalharPedidoSchema) other);
-        return new EqualsBuilder().append(listaVinculos, rhs.listaVinculos).append(situacao, rhs.situacao).append(orgao, rhs.orgao).append(numero, rhs.numero).append(codigoModelo, rhs.codigoModelo).append(declarante, rhs.declarante).append(importadorExportador, rhs.importadorExportador).append(saldo, rhs.saldo).append(listaCamposFormulario, rhs.listaCamposFormulario).append(listaNcm, rhs.listaNcm).append(unidadeMedidaEstatistica, rhs.unidadeMedidaEstatistica).append(informacaoAdicional, rhs.informacaoAdicional).append(unidadeMedidaComercializada, rhs.unidadeMedidaComercializada).isEquals();
+        return new EqualsBuilder().append(listaVinculos, rhs.listaVinculos).append(situacao, rhs.situacao).append(orgao, rhs.orgao).append(numero, rhs.numero).append(codigoModelo, rhs.codigoModelo).append(declarante, rhs.declarante).append(importadorExportador, rhs.importadorExportador).append(saldo, rhs.saldo).append(listaCamposFormulario, rhs.listaCamposFormulario).append(listaNcm, rhs.listaNcm).append(unidadeMedidaEstatistica, rhs.unidadeMedidaEstatistica).append(chaveAcesso, rhs.chaveAcesso).append(informacaoAdicional, rhs.informacaoAdicional).append(unidadeMedidaComercializada, rhs.unidadeMedidaComercializada).isEquals();
     }
 
 }

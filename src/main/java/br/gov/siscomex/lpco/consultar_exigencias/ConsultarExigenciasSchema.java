@@ -10,9 +10,9 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 
 public class ConsultarExigenciasSchema {
 
-    @SerializedName("id")
+    @SerializedName("numero")
     @Expose
-    private String id;
+    private String numero;
     @SerializedName("exigencia")
     @Expose
     private String exigencia;
@@ -25,21 +25,24 @@ public class ConsultarExigenciasSchema {
     @SerializedName("dataResposta")
     @Expose
     private String dataResposta;
+    @SerializedName("justificativa")
+    @Expose
+    private String justificativa;
     @SerializedName("situacao")
     @Expose
     @Valid
     private Situacao situacao;
 
-    public String getId() {
-        return id;
+    public String getNumero() {
+        return numero;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setNumero(String numero) {
+        this.numero = numero;
     }
 
-    public ConsultarExigenciasSchema withId(String id) {
-        this.id = id;
+    public ConsultarExigenciasSchema withNumero(String numero) {
+        this.numero = numero;
         return this;
     }
 
@@ -95,6 +98,19 @@ public class ConsultarExigenciasSchema {
         return this;
     }
 
+    public String getJustificativa() {
+        return justificativa;
+    }
+
+    public void setJustificativa(String justificativa) {
+        this.justificativa = justificativa;
+    }
+
+    public ConsultarExigenciasSchema withJustificativa(String justificativa) {
+        this.justificativa = justificativa;
+        return this;
+    }
+
     public Situacao getSituacao() {
         return situacao;
     }
@@ -110,12 +126,12 @@ public class ConsultarExigenciasSchema {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("id", id).append("exigencia", exigencia).append("dataExigencia", dataExigencia).append("resposta", resposta).append("dataResposta", dataResposta).append("situacao", situacao).toString();
+        return new ToStringBuilder(this).append("numero", numero).append("exigencia", exigencia).append("dataExigencia", dataExigencia).append("resposta", resposta).append("dataResposta", dataResposta).append("justificativa", justificativa).append("situacao", situacao).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(exigencia).append(dataExigencia).append(situacao).append(resposta).append(dataResposta).append(id).toHashCode();
+        return new HashCodeBuilder().append(exigencia).append(dataExigencia).append(situacao).append(numero).append(resposta).append(justificativa).append(dataResposta).toHashCode();
     }
 
     @Override
@@ -127,7 +143,7 @@ public class ConsultarExigenciasSchema {
             return false;
         }
         ConsultarExigenciasSchema rhs = ((ConsultarExigenciasSchema) other);
-        return new EqualsBuilder().append(exigencia, rhs.exigencia).append(dataExigencia, rhs.dataExigencia).append(situacao, rhs.situacao).append(resposta, rhs.resposta).append(dataResposta, rhs.dataResposta).append(id, rhs.id).isEquals();
+        return new EqualsBuilder().append(exigencia, rhs.exigencia).append(dataExigencia, rhs.dataExigencia).append(situacao, rhs.situacao).append(numero, rhs.numero).append(resposta, rhs.resposta).append(justificativa, rhs.justificativa).append(dataResposta, rhs.dataResposta).isEquals();
     }
 
 }

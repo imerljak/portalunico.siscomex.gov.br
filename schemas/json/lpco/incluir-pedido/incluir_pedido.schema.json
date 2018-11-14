@@ -7,8 +7,6 @@
 		"codigoModelo": { "type": "string" },
 		"importadorExportador": { "type": "string" },
 		"declarante": { "type": "string" },
-		"unidadeMedidaEstatistica": { "type": ["string", "null"] },
-		"unidadeMedidaComercializada": { "type": ["string", "null"] },
 		"informacaoAdicional": { "type": ["string", "null"] },
 		"listaNcm": {
 			"type": "array",
@@ -58,6 +56,7 @@
 					}
 				}
 			}
-		}
+		},
+		"unidadeMedidaComercializada": { "type": ["string", "null"] }
 	} 
 }

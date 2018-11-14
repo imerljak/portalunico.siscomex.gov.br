@@ -5,6 +5,7 @@
 	"$id": "http://www.pucomex.serpro.gov.br/lpco/detalhar_modelos.schema.json",
 	"properties": {
 		"numero": { "type": "string" },
+		"chaveAcesso": { "type": "string" },
 		"codigoModelo": { "type": "string" },
 		"orgao": { "type": "string" },
 		"situacao": { 
