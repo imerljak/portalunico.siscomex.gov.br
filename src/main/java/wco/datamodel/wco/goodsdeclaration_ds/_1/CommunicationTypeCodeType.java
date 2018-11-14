@@ -1,3 +1,10 @@
+//
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.0 
+// Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+// Gerado em: 2018.11.14 às 04:12:02 PM BRST 
+//
+
 
 package wco.datamodel.wco.goodsdeclaration_ds._1;
 
@@ -6,21 +13,21 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for CommunicationTypeCodeType.
+ * <p>Classe Java de CommunicationTypeCodeType.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * <p>
  * <pre>
- * &lt;simpleType name="CommunicationTypeCodeType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}token">
- *     &lt;enumeration value="EM"/>
- *     &lt;enumeration value="TE"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="CommunicationTypeCodeType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}token"&gt;
+ *     &lt;enumeration value="EM"/&gt;
+ *     &lt;enumeration value="TE"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
-@XmlType(name = "CommunicationTypeCodeType", namespace = "urn:wco:datamodel:WCO:GoodsDeclaration_DS:1")
+@XmlType(name = "CommunicationTypeCodeType")
 @XmlEnum
 public enum CommunicationTypeCodeType {
 

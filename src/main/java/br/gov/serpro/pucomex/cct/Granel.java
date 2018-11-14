@@ -1,30 +1,40 @@
+//
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.0 
+// Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+// Gerado em: 2018.11.14 às 04:12:02 PM BRST 
+//
+
 
 package br.gov.serpro.pucomex.cct;
 
-import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 
 /**
- * <p>Java class for anonymous complex type.
+ * <p>Classe Java de anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="carga" type="{http://www.pucomex.serpro.gov.br/cct}TGranel" maxOccurs="unbounded"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="carga" type="{http://www.pucomex.serpro.gov.br/cct}TGranel" maxOccurs="unbounded"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -33,39 +43,14 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "", propOrder = {
     "carga"
 })
-@XmlRootElement(name = "granel", namespace = "http://www.pucomex.serpro.gov.br/cct")
+@XmlRootElement(name = "granel")
+@Builder(builderMethodName = "granelBuilder")
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class Granel {
 
-    @XmlElement(namespace = "http://www.pucomex.serpro.gov.br/cct", required = true)
+    @XmlElement(required = true)
     protected List<TGranel> carga;
-
-    /**
-     * Gets the value of the carga property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the carga property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getCarga().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link TGranel }
-     * 
-     * 
-     */
-    public List<TGranel> getCarga() {
-        if (carga == null) {
-            carga = new ArrayList<TGranel>();
-        }
-        return this.carga;
-    }
 
 }

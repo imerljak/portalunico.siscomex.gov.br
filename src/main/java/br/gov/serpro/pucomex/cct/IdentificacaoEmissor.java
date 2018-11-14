@@ -1,90 +1,54 @@
+//
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.0 
+// Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+// Gerado em: 2018.11.14 às 04:12:02 PM BRST 
+//
+
 
 package br.gov.serpro.pucomex.cct;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 
 /**
- * <p>Java class for IdentificacaoEmissor complex type.
+ * <p>Classe Java de IdentificacaoEmissor complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * 
  * <pre>
- * &lt;complexType name="IdentificacaoEmissor">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice>
- *         &lt;element name="cnpj" type="{http://www.pucomex.serpro.gov.br/cct}CNPJ"/>
- *         &lt;element name="cpf" type="{http://www.pucomex.serpro.gov.br/cct}CPF"/>
- *       &lt;/choice>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="IdentificacaoEmissor"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;choice&gt;
+ *         &lt;element name="cnpj" type="{http://www.pucomex.serpro.gov.br/cct}CNPJ"/&gt;
+ *         &lt;element name="cpf" type="{http://www.pucomex.serpro.gov.br/cct}CPF"/&gt;
+ *       &lt;/choice&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "IdentificacaoEmissor", namespace = "http://www.pucomex.serpro.gov.br/cct", propOrder = {
+@XmlType(name = "IdentificacaoEmissor", propOrder = {
     "cnpj",
     "cpf"
 })
+@Builder(builderMethodName = "identificacaoEmissorBuilder")
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class IdentificacaoEmissor {
 
-    @XmlElement(namespace = "http://www.pucomex.serpro.gov.br/cct")
     protected String cnpj;
-    @XmlElement(namespace = "http://www.pucomex.serpro.gov.br/cct")
     protected String cpf;
-
-    /**
-     * Gets the value of the cnpj property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCnpj() {
-        return cnpj;
-    }
-
-    /**
-     * Sets the value of the cnpj property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCnpj(String value) {
-        this.cnpj = value;
-    }
-
-    /**
-     * Gets the value of the cpf property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCpf() {
-        return cpf;
-    }
-
-    /**
-     * Sets the value of the cpf property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCpf(String value) {
-        this.cpf = value;
-    }
 
 }

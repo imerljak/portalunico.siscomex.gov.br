@@ -1,3 +1,10 @@
+//
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementa√ß√£o de Refer√™ncia (JAXB) de Bind XML, v2.3.0 
+// Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+// Todas as modifica√ß√µes neste arquivo ser√£o perdidas ap√≥s a recompila√ß√£o do esquema de origem. 
+// Gerado em: 2018.11.14 √†s 04:12:02 PM BRST 
+//
+
 
 package wco.datamodel.wco.goodsdeclaration_ds._1;
 
@@ -6,35 +13,35 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for AdditionalInformationStatementTypeCodeType.
+ * <p>Classe Java de AdditionalInformationStatementTypeCodeType.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>O seguinte fragmento do esquema especifica o conte√∫do esperado contido dentro desta classe.
  * <p>
  * <pre>
- * &lt;simpleType name="AdditionalInformationStatementTypeCodeType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}token">
- *     &lt;enumeration value="AAI"/>
- *     &lt;enumeration value="ABC"/>
- *     &lt;enumeration value="DEF"/>
- *     &lt;enumeration value="AAZ"/>
- *     &lt;enumeration value="ACG"/>
- *     &lt;enumeration value="AHZ"/>
- *     &lt;enumeration value="CUS"/>
- *     &lt;enumeration value="PRI"/>
- *     &lt;enumeration value="TRA"/>
- *     &lt;enumeration value="AVD"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="AdditionalInformationStatementTypeCodeType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}token"&gt;
+ *     &lt;enumeration value="AAI"/&gt;
+ *     &lt;enumeration value="ABC"/&gt;
+ *     &lt;enumeration value="DEF"/&gt;
+ *     &lt;enumeration value="AAZ"/&gt;
+ *     &lt;enumeration value="ACG"/&gt;
+ *     &lt;enumeration value="AHZ"/&gt;
+ *     &lt;enumeration value="CUS"/&gt;
+ *     &lt;enumeration value="PRI"/&gt;
+ *     &lt;enumeration value="TRA"/&gt;
+ *     &lt;enumeration value="AVD"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
-@XmlType(name = "AdditionalInformationStatementTypeCodeType", namespace = "urn:wco:datamodel:WCO:GoodsDeclaration_DS:1")
+@XmlType(name = "AdditionalInformationStatementTypeCodeType")
 @XmlEnum
 public enum AdditionalInformationStatementTypeCodeType {
 
 
     /**
-     * ObservaÁıes Gerais
+     * Observa√ß√µes Gerais
      * 
      */
     AAI,
@@ -46,13 +53,13 @@ public enum AdditionalInformationStatementTypeCodeType {
     ABC,
 
     /**
-     * Motivo retificaÁ„o
+     * Motivo retifica√ß√£o
      * 
      */
     DEF,
 
     /**
-     * ExportaÁ„o Tempor·ria - Escolhendo esta opÁ„o deve-se tambÈm preencher statementDescription e limit no level GovernmentAgencyGoodsItem/AdditionalInformation
+     * Exporta√ß√£o Tempor√°ria - Escolhendo esta op√ß√£o deve-se tamb√©m preencher statementDescription e limit no level GovernmentAgencyGoodsItem/AdditionalInformation
      * 
      */
     AAZ,
@@ -64,13 +71,13 @@ public enum AdditionalInformationStatementTypeCodeType {
     ACG,
 
     /**
-     * SituaÁ„o Especial
+     * Situa√ß√£o Especial
      * 
      */
     AHZ,
 
     /**
-     * Forma ExportaÁ„o
+     * Forma Exporta√ß√£o
      * 
      */
     CUS,
@@ -88,7 +95,7 @@ public enum AdditionalInformationStatementTypeCodeType {
     TRA,
 
     /**
-     * Justificativa depuraÁ„o estatÌstica qtd/peso/valor - Escolhendo esta opÁ„o deve-se tambÈm preencher statementDescription no level GovernmentAgencyGoodsItem/AdditionalInformation
+     * Justificativa depura√ß√£o estat√≠stica qtd/peso/valor - Escolhendo esta op√ß√£o deve-se tamb√©m preencher statementDescription no level GovernmentAgencyGoodsItem/AdditionalInformation
      * 
      */
     AVD;

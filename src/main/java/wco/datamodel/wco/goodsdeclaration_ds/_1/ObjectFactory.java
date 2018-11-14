@@ -1,3 +1,10 @@
+//
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.0 
+// Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+// Gerado em: 2018.11.14 às 04:12:02 PM BRST 
+//
+
 
 package wco.datamodel.wco.goodsdeclaration_ds._1;
 
@@ -38,11 +45,91 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GoodsMeasureUnitDescriptionTextType }
+     * Create an instance of {@link AdditionalDocumentIdentificationIDType }
      * 
      */
-    public GoodsMeasureUnitDescriptionTextType createGoodsMeasureUnitDescriptionTextType() {
-        return new GoodsMeasureUnitDescriptionTextType();
+    public AdditionalDocumentIdentificationIDType createAdditionalDocumentIdentificationIDType() {
+        return new AdditionalDocumentIdentificationIDType();
+    }
+
+    /**
+     * Create an instance of {@link AdditionalInformationLimitDateTimeType }
+     * 
+     */
+    public AdditionalInformationLimitDateTimeType createAdditionalInformationLimitDateTimeType() {
+        return new AdditionalInformationLimitDateTimeType();
+    }
+
+    /**
+     * Create an instance of {@link AdditionalInformationStatementDescriptionTextType }
+     * 
+     */
+    public AdditionalInformationStatementDescriptionTextType createAdditionalInformationStatementDescriptionTextType() {
+        return new AdditionalInformationStatementDescriptionTextType();
+    }
+
+    /**
+     * Create an instance of {@link AddressLineTextType }
+     * 
+     */
+    public AddressLineTextType createAddressLineTextType() {
+        return new AddressLineTextType();
+    }
+
+    /**
+     * Create an instance of {@link ClassificationIdentificationIDType }
+     * 
+     */
+    public ClassificationIdentificationIDType createClassificationIdentificationIDType() {
+        return new ClassificationIdentificationIDType();
+    }
+
+    /**
+     * Create an instance of {@link CommodityCommercialDescriptionTextType }
+     * 
+     */
+    public CommodityCommercialDescriptionTextType createCommodityCommercialDescriptionTextType() {
+        return new CommodityCommercialDescriptionTextType();
+    }
+
+    /**
+     * Create an instance of {@link CommodityDescriptionTextType }
+     * 
+     */
+    public CommodityDescriptionTextType createCommodityDescriptionTextType() {
+        return new CommodityDescriptionTextType();
+    }
+
+    /**
+     * Create an instance of {@link CommodityValueAmountType }
+     * 
+     */
+    public CommodityValueAmountType createCommodityValueAmountType() {
+        return new CommodityValueAmountType();
+    }
+
+    /**
+     * Create an instance of {@link DeclarantIdentificationIDType }
+     * 
+     */
+    public DeclarantIdentificationIDType createDeclarantIdentificationIDType() {
+        return new DeclarantIdentificationIDType();
+    }
+
+    /**
+     * Create an instance of {@link DeclarationIdentificationIDType }
+     * 
+     */
+    public DeclarationIdentificationIDType createDeclarationIdentificationIDType() {
+        return new DeclarationIdentificationIDType();
+    }
+
+    /**
+     * Create an instance of {@link DeclarationOfficeIdentificationCodeType }
+     * 
+     */
+    public DeclarationOfficeIdentificationCodeType createDeclarationOfficeIdentificationCodeType() {
+        return new DeclarationOfficeIdentificationCodeType();
     }
 
     /**
@@ -54,27 +141,43 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link InvoiceIdentificationIDType }
+     * Create an instance of {@link ExporterIdentificationIDType }
      * 
      */
-    public InvoiceIdentificationIDType createInvoiceIdentificationIDType() {
-        return new InvoiceIdentificationIDType();
+    public ExporterIdentificationIDType createExporterIdentificationIDType() {
+        return new ExporterIdentificationIDType();
     }
 
     /**
-     * Create an instance of {@link AdditionalDocumentQuantityQuantityType }
+     * Create an instance of {@link ExporterNameTextType }
      * 
      */
-    public AdditionalDocumentQuantityQuantityType createAdditionalDocumentQuantityQuantityType() {
-        return new AdditionalDocumentQuantityQuantityType();
+    public ExporterNameTextType createExporterNameTextType() {
+        return new ExporterNameTextType();
     }
 
     /**
-     * Create an instance of {@link WarehouseLatitudeMeasureType }
+     * Create an instance of {@link GoodsMeasureNetNetWeightMeasureType }
      * 
      */
-    public WarehouseLatitudeMeasureType createWarehouseLatitudeMeasureType() {
-        return new WarehouseLatitudeMeasureType();
+    public GoodsMeasureNetNetWeightMeasureType createGoodsMeasureNetNetWeightMeasureType() {
+        return new GoodsMeasureNetNetWeightMeasureType();
+    }
+
+    /**
+     * Create an instance of {@link GoodsMeasureTariffQuantityType }
+     * 
+     */
+    public GoodsMeasureTariffQuantityType createGoodsMeasureTariffQuantityType() {
+        return new GoodsMeasureTariffQuantityType();
+    }
+
+    /**
+     * Create an instance of {@link GovernmentAgencyGoodsItemCustomsValueAmountType }
+     * 
+     */
+    public GovernmentAgencyGoodsItemCustomsValueAmountType createGovernmentAgencyGoodsItemCustomsValueAmountType() {
+        return new GovernmentAgencyGoodsItemCustomsValueAmountType();
     }
 
     /**
@@ -94,187 +197,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link WarehouseIdentificationIDType }
+     * Create an instance of {@link InvoiceIdentificationIDType }
      * 
      */
-    public WarehouseIdentificationIDType createWarehouseIdentificationIDType() {
-        return new WarehouseIdentificationIDType();
-    }
-
-    /**
-     * Create an instance of {@link ProductCriteriaConformanceTypeCodeType }
-     * 
-     */
-    public ProductCriteriaConformanceTypeCodeType createProductCriteriaConformanceTypeCodeType() {
-        return new ProductCriteriaConformanceTypeCodeType();
-    }
-
-    /**
-     * Create an instance of {@link DeclarationOfficeIdentificationCodeType }
-     * 
-     */
-    public DeclarationOfficeIdentificationCodeType createDeclarationOfficeIdentificationCodeType() {
-        return new DeclarationOfficeIdentificationCodeType();
-    }
-
-    /**
-     * Create an instance of {@link AdditionalInformationLimitDateTimeType }
-     * 
-     */
-    public AdditionalInformationLimitDateTimeType createAdditionalInformationLimitDateTimeType() {
-        return new AdditionalInformationLimitDateTimeType();
-    }
-
-    /**
-     * Create an instance of {@link SubmitterIdentificationIDType }
-     * 
-     */
-    public SubmitterIdentificationIDType createSubmitterIdentificationIDType() {
-        return new SubmitterIdentificationIDType();
-    }
-
-    /**
-     * Create an instance of {@link GoodsMeasureNetNetWeightMeasureType }
-     * 
-     */
-    public GoodsMeasureNetNetWeightMeasureType createGoodsMeasureNetNetWeightMeasureType() {
-        return new GoodsMeasureNetNetWeightMeasureType();
-    }
-
-    /**
-     * Create an instance of {@link AdditionalDocumentValueWithExchangeCoverAmountType }
-     * 
-     */
-    public AdditionalDocumentValueWithExchangeCoverAmountType createAdditionalDocumentValueWithExchangeCoverAmountType() {
-        return new AdditionalDocumentValueWithExchangeCoverAmountType();
-    }
-
-    /**
-     * Create an instance of {@link AdditionalDocumentItemIDType }
-     * 
-     */
-    public AdditionalDocumentItemIDType createAdditionalDocumentItemIDType() {
-        return new AdditionalDocumentItemIDType();
-    }
-
-    /**
-     * Create an instance of {@link GovernmentAgencyGoodsItemValueWithoutExchangeCoverAmountType }
-     * 
-     */
-    public GovernmentAgencyGoodsItemValueWithoutExchangeCoverAmountType createGovernmentAgencyGoodsItemValueWithoutExchangeCoverAmountType() {
-        return new GovernmentAgencyGoodsItemValueWithoutExchangeCoverAmountType();
-    }
-
-    /**
-     * Create an instance of {@link AdditionalDocumentDrawbackRecipientIdTextType }
-     * 
-     */
-    public AdditionalDocumentDrawbackRecipientIdTextType createAdditionalDocumentDrawbackRecipientIdTextType() {
-        return new AdditionalDocumentDrawbackRecipientIdTextType();
-    }
-
-    /**
-     * Create an instance of {@link ReferencedInvoiceLineInvoiceIdentificationIDType }
-     * 
-     */
-    public ReferencedInvoiceLineInvoiceIdentificationIDType createReferencedInvoiceLineInvoiceIdentificationIDType() {
-        return new ReferencedInvoiceLineInvoiceIdentificationIDType();
-    }
-
-    /**
-     * Create an instance of {@link ExporterNameTextType }
-     * 
-     */
-    public ExporterNameTextType createExporterNameTextType() {
-        return new ExporterNameTextType();
-    }
-
-    /**
-     * Create an instance of {@link GoodsMeasureTariffQuantityType }
-     * 
-     */
-    public GoodsMeasureTariffQuantityType createGoodsMeasureTariffQuantityType() {
-        return new GoodsMeasureTariffQuantityType();
-    }
-
-    /**
-     * Create an instance of {@link CommunicationIdentificationIDType }
-     * 
-     */
-    public CommunicationIdentificationIDType createCommunicationIdentificationIDType() {
-        return new CommunicationIdentificationIDType();
-    }
-
-    /**
-     * Create an instance of {@link ExporterIdentificationIDType }
-     * 
-     */
-    public ExporterIdentificationIDType createExporterIdentificationIDType() {
-        return new ExporterIdentificationIDType();
-    }
-
-    /**
-     * Create an instance of {@link CommodityDescriptionTextType }
-     * 
-     */
-    public CommodityDescriptionTextType createCommodityDescriptionTextType() {
-        return new CommodityDescriptionTextType();
-    }
-
-    /**
-     * Create an instance of {@link PackagingQuantityQuantityType }
-     * 
-     */
-    public PackagingQuantityQuantityType createPackagingQuantityQuantityType() {
-        return new PackagingQuantityQuantityType();
-    }
-
-    /**
-     * Create an instance of {@link PreviousDocumentIdentificationIDType }
-     * 
-     */
-    public PreviousDocumentIdentificationIDType createPreviousDocumentIdentificationIDType() {
-        return new PreviousDocumentIdentificationIDType();
-    }
-
-    /**
-     * Create an instance of {@link GovernmentAgencyGoodsItemValueWithExchangeCoverAmountType }
-     * 
-     */
-    public GovernmentAgencyGoodsItemValueWithExchangeCoverAmountType createGovernmentAgencyGoodsItemValueWithExchangeCoverAmountType() {
-        return new GovernmentAgencyGoodsItemValueWithExchangeCoverAmountType();
-    }
-
-    /**
-     * Create an instance of {@link UCRTraderAssignedReferenceIDType }
-     * 
-     */
-    public UCRTraderAssignedReferenceIDType createUCRTraderAssignedReferenceIDType() {
-        return new UCRTraderAssignedReferenceIDType();
-    }
-
-    /**
-     * Create an instance of {@link CommodityValueAmountType }
-     * 
-     */
-    public CommodityValueAmountType createCommodityValueAmountType() {
-        return new CommodityValueAmountType();
-    }
-
-    /**
-     * Create an instance of {@link ProductCharacteristicsTypeCodeType }
-     * 
-     */
-    public ProductCharacteristicsTypeCodeType createProductCharacteristicsTypeCodeType() {
-        return new ProductCharacteristicsTypeCodeType();
-    }
-
-    /**
-     * Create an instance of {@link AddressLineTextType }
-     * 
-     */
-    public AddressLineTextType createAddressLineTextType() {
-        return new AddressLineTextType();
+    public InvoiceIdentificationIDType createInvoiceIdentificationIDType() {
+        return new InvoiceIdentificationIDType();
     }
 
     /**
@@ -294,83 +221,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ClassificationIdentificationIDType }
+     * Create an instance of {@link PackagingQuantityQuantityType }
      * 
      */
-    public ClassificationIdentificationIDType createClassificationIdentificationIDType() {
-        return new ClassificationIdentificationIDType();
+    public PackagingQuantityQuantityType createPackagingQuantityQuantityType() {
+        return new PackagingQuantityQuantityType();
     }
 
     /**
-     * Create an instance of {@link TradeTermsDescriptionTextType }
+     * Create an instance of {@link PreviousDocumentIdentificationIDType }
      * 
      */
-    public TradeTermsDescriptionTextType createTradeTermsDescriptionTextType() {
-        return new TradeTermsDescriptionTextType();
-    }
-
-    /**
-     * Create an instance of {@link CommodityCommercialDescriptionTextType }
-     * 
-     */
-    public CommodityCommercialDescriptionTextType createCommodityCommercialDescriptionTextType() {
-        return new CommodityCommercialDescriptionTextType();
-    }
-
-    /**
-     * Create an instance of {@link ProductCriteriaConformanceDescriptionTextType }
-     * 
-     */
-    public ProductCriteriaConformanceDescriptionTextType createProductCriteriaConformanceDescriptionTextType() {
-        return new ProductCriteriaConformanceDescriptionTextType();
-    }
-
-    /**
-     * Create an instance of {@link WarehouseLongitudeMeasureType }
-     * 
-     */
-    public WarehouseLongitudeMeasureType createWarehouseLongitudeMeasureType() {
-        return new WarehouseLongitudeMeasureType();
-    }
-
-    /**
-     * Create an instance of {@link InvoiceQuantityQuantityType }
-     * 
-     */
-    public InvoiceQuantityQuantityType createInvoiceQuantityQuantityType() {
-        return new InvoiceQuantityQuantityType();
-    }
-
-    /**
-     * Create an instance of {@link DeclarantIdentificationIDType }
-     * 
-     */
-    public DeclarantIdentificationIDType createDeclarantIdentificationIDType() {
-        return new DeclarantIdentificationIDType();
-    }
-
-    /**
-     * Create an instance of {@link CommodityInvoiceBRLvalueAmountType }
-     * 
-     */
-    public CommodityInvoiceBRLvalueAmountType createCommodityInvoiceBRLvalueAmountType() {
-        return new CommodityInvoiceBRLvalueAmountType();
-    }
-
-    /**
-     * Create an instance of {@link ContactNameTextType }
-     * 
-     */
-    public ContactNameTextType createContactNameTextType() {
-        return new ContactNameTextType();
-    }
-
-    /**
-     * Create an instance of {@link AdditionalDocumentIdentificationIDType }
-     * 
-     */
-    public AdditionalDocumentIdentificationIDType createAdditionalDocumentIdentificationIDType() {
-        return new AdditionalDocumentIdentificationIDType();
+    public PreviousDocumentIdentificationIDType createPreviousDocumentIdentificationIDType() {
+        return new PreviousDocumentIdentificationIDType();
     }
 
     /**
@@ -382,19 +245,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GovernmentAgencyGoodsItemCustomsValueAmountType }
+     * Create an instance of {@link ProductCharacteristicsTypeCodeType }
      * 
      */
-    public GovernmentAgencyGoodsItemCustomsValueAmountType createGovernmentAgencyGoodsItemCustomsValueAmountType() {
-        return new GovernmentAgencyGoodsItemCustomsValueAmountType();
-    }
-
-    /**
-     * Create an instance of {@link AdditionalInformationStatementDescriptionTextType }
-     * 
-     */
-    public AdditionalInformationStatementDescriptionTextType createAdditionalInformationStatementDescriptionTextType() {
-        return new AdditionalInformationStatementDescriptionTextType();
+    public ProductCharacteristicsTypeCodeType createProductCharacteristicsTypeCodeType() {
+        return new ProductCharacteristicsTypeCodeType();
     }
 
     /**
@@ -406,11 +261,155 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AdditionalDocumentValueWithoutExchangeCoverAmountType }
+     * Create an instance of {@link ReferencedInvoiceIdentificationIDType }
      * 
      */
-    public AdditionalDocumentValueWithoutExchangeCoverAmountType createAdditionalDocumentValueWithoutExchangeCoverAmountType() {
-        return new AdditionalDocumentValueWithoutExchangeCoverAmountType();
+    public ReferencedInvoiceIdentificationIDType createReferencedInvoiceIdentificationIDType() {
+        return new ReferencedInvoiceIdentificationIDType();
+    }
+
+    /**
+     * Create an instance of {@link ReferencedInvoiceLineInvoiceIdentificationIDType }
+     * 
+     */
+    public ReferencedInvoiceLineInvoiceIdentificationIDType createReferencedInvoiceLineInvoiceIdentificationIDType() {
+        return new ReferencedInvoiceLineInvoiceIdentificationIDType();
+    }
+
+    /**
+     * Create an instance of {@link SubmitterIdentificationIDType }
+     * 
+     */
+    public SubmitterIdentificationIDType createSubmitterIdentificationIDType() {
+        return new SubmitterIdentificationIDType();
+    }
+
+    /**
+     * Create an instance of {@link TradeTermsDescriptionTextType }
+     * 
+     */
+    public TradeTermsDescriptionTextType createTradeTermsDescriptionTextType() {
+        return new TradeTermsDescriptionTextType();
+    }
+
+    /**
+     * Create an instance of {@link UCRTraderAssignedReferenceIDType }
+     * 
+     */
+    public UCRTraderAssignedReferenceIDType createUCRTraderAssignedReferenceIDType() {
+        return new UCRTraderAssignedReferenceIDType();
+    }
+
+    /**
+     * Create an instance of {@link WarehouseIdentificationIDType }
+     * 
+     */
+    public WarehouseIdentificationIDType createWarehouseIdentificationIDType() {
+        return new WarehouseIdentificationIDType();
+    }
+
+    /**
+     * Create an instance of {@link ProductCriteriaConformanceTypeCodeType }
+     * 
+     */
+    public ProductCriteriaConformanceTypeCodeType createProductCriteriaConformanceTypeCodeType() {
+        return new ProductCriteriaConformanceTypeCodeType();
+    }
+
+    /**
+     * Create an instance of {@link ProductCriteriaConformanceDescriptionTextType }
+     * 
+     */
+    public ProductCriteriaConformanceDescriptionTextType createProductCriteriaConformanceDescriptionTextType() {
+        return new ProductCriteriaConformanceDescriptionTextType();
+    }
+
+    /**
+     * Create an instance of {@link WarehouseLatitudeMeasureType }
+     * 
+     */
+    public WarehouseLatitudeMeasureType createWarehouseLatitudeMeasureType() {
+        return new WarehouseLatitudeMeasureType();
+    }
+
+    /**
+     * Create an instance of {@link WarehouseLongitudeMeasureType }
+     * 
+     */
+    public WarehouseLongitudeMeasureType createWarehouseLongitudeMeasureType() {
+        return new WarehouseLongitudeMeasureType();
+    }
+
+    /**
+     * Create an instance of {@link GoodsMeasureUnitDescriptionTextType }
+     * 
+     */
+    public GoodsMeasureUnitDescriptionTextType createGoodsMeasureUnitDescriptionTextType() {
+        return new GoodsMeasureUnitDescriptionTextType();
+    }
+
+    /**
+     * Create an instance of {@link GovernmentAgencyGoodsItemValueWithExchangeCoverAmountType }
+     * 
+     */
+    public GovernmentAgencyGoodsItemValueWithExchangeCoverAmountType createGovernmentAgencyGoodsItemValueWithExchangeCoverAmountType() {
+        return new GovernmentAgencyGoodsItemValueWithExchangeCoverAmountType();
+    }
+
+    /**
+     * Create an instance of {@link GovernmentAgencyGoodsItemValueWithoutExchangeCoverAmountType }
+     * 
+     */
+    public GovernmentAgencyGoodsItemValueWithoutExchangeCoverAmountType createGovernmentAgencyGoodsItemValueWithoutExchangeCoverAmountType() {
+        return new GovernmentAgencyGoodsItemValueWithoutExchangeCoverAmountType();
+    }
+
+    /**
+     * Create an instance of {@link AdditionalDocumentItemIDType }
+     * 
+     */
+    public AdditionalDocumentItemIDType createAdditionalDocumentItemIDType() {
+        return new AdditionalDocumentItemIDType();
+    }
+
+    /**
+     * Create an instance of {@link AdditionalDocumentQuantityQuantityType }
+     * 
+     */
+    public AdditionalDocumentQuantityQuantityType createAdditionalDocumentQuantityQuantityType() {
+        return new AdditionalDocumentQuantityQuantityType();
+    }
+
+    /**
+     * Create an instance of {@link InvoiceQuantityQuantityType }
+     * 
+     */
+    public InvoiceQuantityQuantityType createInvoiceQuantityQuantityType() {
+        return new InvoiceQuantityQuantityType();
+    }
+
+    /**
+     * Create an instance of {@link CommodityInvoiceBRLvalueAmountType }
+     * 
+     */
+    public CommodityInvoiceBRLvalueAmountType createCommodityInvoiceBRLvalueAmountType() {
+        return new CommodityInvoiceBRLvalueAmountType();
+    }
+
+    /**
+     * Create an instance of {@link CommunicationIdentificationIDType }
+     * 
+     */
+    public CommunicationIdentificationIDType createCommunicationIdentificationIDType() {
+        return new CommunicationIdentificationIDType();
+    }
+
+    /**
+     * Create an instance of {@link ContactNameTextType }
+     * 
+     */
+    public ContactNameTextType createContactNameTextType() {
+        return new ContactNameTextType();
     }
 
     /**
@@ -422,19 +421,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DeclarationIdentificationIDType }
+     * Create an instance of {@link AdditionalDocumentDrawbackRecipientIdTextType }
      * 
      */
-    public DeclarationIdentificationIDType createDeclarationIdentificationIDType() {
-        return new DeclarationIdentificationIDType();
+    public AdditionalDocumentDrawbackRecipientIdTextType createAdditionalDocumentDrawbackRecipientIdTextType() {
+        return new AdditionalDocumentDrawbackRecipientIdTextType();
     }
 
     /**
-     * Create an instance of {@link ReferencedInvoiceIdentificationIDType }
+     * Create an instance of {@link AdditionalDocumentValueWithExchangeCoverAmountType }
      * 
      */
-    public ReferencedInvoiceIdentificationIDType createReferencedInvoiceIdentificationIDType() {
-        return new ReferencedInvoiceIdentificationIDType();
+    public AdditionalDocumentValueWithExchangeCoverAmountType createAdditionalDocumentValueWithExchangeCoverAmountType() {
+        return new AdditionalDocumentValueWithExchangeCoverAmountType();
+    }
+
+    /**
+     * Create an instance of {@link AdditionalDocumentValueWithoutExchangeCoverAmountType }
+     * 
+     */
+    public AdditionalDocumentValueWithoutExchangeCoverAmountType createAdditionalDocumentValueWithoutExchangeCoverAmountType() {
+        return new AdditionalDocumentValueWithoutExchangeCoverAmountType();
     }
 
     /**

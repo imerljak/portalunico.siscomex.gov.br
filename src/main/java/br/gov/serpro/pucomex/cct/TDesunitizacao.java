@@ -1,3 +1,10 @@
+//
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.0 
+// Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+// Gerado em: 2018.11.14 às 04:12:02 PM BRST 
+//
+
 
 package br.gov.serpro.pucomex.cct;
 
@@ -5,88 +12,48 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 
 /**
- * <p>Java class for TDesunitizacao complex type.
+ * <p>Classe Java de TDesunitizacao complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * 
  * <pre>
- * &lt;complexType name="TDesunitizacao">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;sequence>
- *           &lt;element name="numeroConteiner" type="{http://www.pucomex.serpro.gov.br/cct}NumeroConteiner"/>
- *           &lt;element ref="{http://www.pucomex.serpro.gov.br/cct}documentos"/>
- *         &lt;/sequence>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="TDesunitizacao"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;sequence&gt;
+ *           &lt;element name="numeroConteiner" type="{http://www.pucomex.serpro.gov.br/cct}NumeroConteiner"/&gt;
+ *           &lt;element ref="{http://www.pucomex.serpro.gov.br/cct}documentos"/&gt;
+ *         &lt;/sequence&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TDesunitizacao", namespace = "http://www.pucomex.serpro.gov.br/cct", propOrder = {
+@XmlType(name = "TDesunitizacao", propOrder = {
     "numeroConteiner",
     "documentos"
 })
+@Builder(builderMethodName = "tDesunitizacaoBuilder")
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class TDesunitizacao {
 
-    @XmlElement(namespace = "http://www.pucomex.serpro.gov.br/cct", required = true)
+    @XmlElement(required = true)
     protected String numeroConteiner;
-    @XmlElement(namespace = "http://www.pucomex.serpro.gov.br/cct", required = true)
+    @XmlElement(required = true)
     protected Documentos documentos;
-
-    /**
-     * Gets the value of the numeroConteiner property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNumeroConteiner() {
-        return numeroConteiner;
-    }
-
-    /**
-     * Sets the value of the numeroConteiner property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNumeroConteiner(String value) {
-        this.numeroConteiner = value;
-    }
-
-    /**
-     * Gets the value of the documentos property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Documentos }
-     *     
-     */
-    public Documentos getDocumentos() {
-        return documentos;
-    }
-
-    /**
-     * Sets the value of the documentos property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Documentos }
-     *     
-     */
-    public void setDocumentos(Documentos value) {
-        this.documentos = value;
-    }
 
 }

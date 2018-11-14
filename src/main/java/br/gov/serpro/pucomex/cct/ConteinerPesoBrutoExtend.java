@@ -1,65 +1,58 @@
+//
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.0 
+// Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+// Gerado em: 2018.11.14 às 04:12:02 PM BRST 
+//
+
 
 package br.gov.serpro.pucomex.cct;
 
 import java.math.BigDecimal;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 
 /**
- * <p>Java class for ConteinerPesoBrutoExtend complex type.
+ * <p>Classe Java de ConteinerPesoBrutoExtend complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * 
  * <pre>
- * &lt;complexType name="ConteinerPesoBrutoExtend">
- *   &lt;complexContent>
- *     &lt;extension base="{http://www.pucomex.serpro.gov.br/cct}TConteiner">
- *       &lt;choice>
- *         &lt;element name="pesoBruto" type="{http://www.pucomex.serpro.gov.br/cct}Dec_9v3"/>
- *       &lt;/choice>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="ConteinerPesoBrutoExtend"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://www.pucomex.serpro.gov.br/cct}TConteiner"&gt;
+ *       &lt;choice&gt;
+ *         &lt;element name="pesoBruto" type="{http://www.pucomex.serpro.gov.br/cct}Dec_9v3"/&gt;
+ *       &lt;/choice&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ConteinerPesoBrutoExtend", namespace = "http://www.pucomex.serpro.gov.br/cct", propOrder = {
+@XmlType(name = "ConteinerPesoBrutoExtend", propOrder = {
     "pesoBruto"
 })
+@Builder(builderMethodName = "conteinerPesoBrutoExtendBuilder")
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@ToString(callSuper = true)
+@EqualsAndHashCode(callSuper = true)
 public class ConteinerPesoBrutoExtend
     extends TConteiner
 {
 
-    @XmlElement(namespace = "http://www.pucomex.serpro.gov.br/cct")
     protected BigDecimal pesoBruto;
-
-    /**
-     * Gets the value of the pesoBruto property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public BigDecimal getPesoBruto() {
-        return pesoBruto;
-    }
-
-    /**
-     * Sets the value of the pesoBruto property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link BigDecimal }
-     *     
-     */
-    public void setPesoBruto(BigDecimal value) {
-        this.pesoBruto = value;
-    }
 
 }

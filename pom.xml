@@ -1,34 +1,132 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>imerljak</groupId>
-  <artifactId>portalunico.siscomex.gov.br</artifactId>
-  <version>1.0.0</version>
-  <name>PortalUnicoSiscomex</name>
-  <description>Classes da API do Portal Único de Comércio Exterior, a nova forma de interação entre as empresas privadas e os diversos órgãos públicos intervenientes no comércio exterior.</description>
-  <url>https://val.portalunico.siscomex.gov.br/docs/api/</url>
-  <organization>
-  	<name>Israel Merljak</name>
-  </organization>
-  <properties>
-  	<maven.compiler.source>1.7</maven.compiler.source>
-  	<maven.compiler.target>1.7</maven.compiler.target>
-  </properties>
-  <dependencies>
-  	<dependency>
-	    <groupId>org.projectlombok</groupId>
-	    <artifactId>lombok</artifactId>
-	    <version>1.16.20</version>
-	    <scope>provided</scope>
-	</dependency>
-	<dependency>
-	    <groupId>com.google.code.gson</groupId>
-	    <artifactId>gson</artifactId>
-	    <version>2.8.2</version>
-	</dependency>
-	<dependency>
-	    <groupId>log4j</groupId>
-	    <artifactId>log4j</artifactId>
-	    <version>1.2.17</version>
-	</dependency>
-  </dependencies>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>imerljak</groupId>
+    <artifactId>portalunico.siscomex.gov.br</artifactId>
+    <version>1.0.0</version>
+    <name>PortalUnicoSiscomex</name>
+    <description>Classes da API do Portal Único de Comércio Exterior, a nova forma de interação entre as empresas
+        privadas e os diversos órgãos públicos intervenientes no comércio exterior.
+    </description>
+    <url>https://val.portalunico.siscomex.gov.br/docs/api/</url>
+    <organization>
+        <name>Israel Merljak</name>
+    </organization>
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.20</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.8.2</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.5.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>2.0.1.Final</version>
+        </dependency>
+
+
+    </dependencies>
+    <build>
+        <plugins>
+
+            <!--Plugin para geração das classes à partir dos .schema.json-->
+            <plugin>
+                <groupId>org.jsonschema2pojo</groupId>
+                <artifactId>jsonschema2pojo-maven-plugin</artifactId>
+                <version>0.5.1</version>
+                <configuration>
+                    <annotationStyle>gson</annotationStyle>
+                    <includeJsr303Annotations>true</includeJsr303Annotations>
+                    <targetPackage>br.gov.siscomex</targetPackage>
+                    <sourceDirectory>${basedir}/schemas/json/</sourceDirectory>
+                    <fileExtensions>
+                        <fileExtension>.schema</fileExtension>
+                    </fileExtensions>
+                    <outputDirectory>${basedir}/src/main/java/</outputDirectory>
+
+                    <!--While Lombok support isn't possible-->
+                    <generateBuilders>true</generateBuilders>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+
+            <!--Plugin para geração das classes à partir dos .xsd-->
+            <plugin>
+                <groupId>org.jvnet.jaxb2.maven2</groupId>
+                <artifactId>maven-jaxb2-plugin</artifactId>
+                <version>0.14.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <schemaDirectory>schemas/xsd</schemaDirectory>
+                    <schemaIncludes>
+                        <schemaInclude>xsd-cct/RootSchema.xsd</schemaInclude>
+                        <schemaInclude>xsd-due/*.xsd</schemaInclude>
+                    </schemaIncludes>
+                    <generateDirectory>src/main/java</generateDirectory>
+
+                    <extension>true</extension>
+                    <args>
+                        <arg>-Xlombok</arg>
+                        <arg>-Xlombok:Data</arg>
+                        <arg>-Xlombok:Builder</arg>
+                    </args>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>br.com.imerljak</groupId>
+                        <artifactId>jaxb-lombok-plugin</artifactId>
+                        <version>1.0</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
 </project>

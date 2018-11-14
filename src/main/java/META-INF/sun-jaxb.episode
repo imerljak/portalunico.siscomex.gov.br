@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <!--
+
+Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.0 
+Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+Gerado em: 2018.11.14 às 04:12:02 PM BRST 
+
+  -->
+  <bindings xmlns:tns="http://www.pucomex.serpro.gov.br/cct" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="br.gov.serpro.pucomex.cct"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:Acondicionamento">
+      <class ref="br.gov.serpro.pucomex.cct.Acondicionamento"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TransitoSimplificadoRecepcao">
+      <class ref="br.gov.serpro.pucomex.cct.TransitoSimplificadoRecepcao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TVeiculoTransitoSimplificado">
+      <class ref="br.gov.serpro.pucomex.cct.TVeiculoTransitoSimplificado"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:NotaFiscalEletronica">
+      <class ref="br.gov.serpro.pucomex.cct.NotaFiscalEletronica"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Destinatario">
+      <class ref="br.gov.serpro.pucomex.cct.Destinatario"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:NotaFiscalFormulario">
+      <class ref="br.gov.serpro.pucomex.cct.NotaFiscalFormulario"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TDocumentoCargaManifestacao">
+      <class ref="br.gov.serpro.pucomex.cct.TDocumentoCargaManifestacao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:DadosCarga">
+      <class ref="br.gov.serpro.pucomex.cct.DadosCarga"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Conhecimento">
+      <class ref="br.gov.serpro.pucomex.cct.Conhecimento"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TConteiner">
+      <class ref="br.gov.serpro.pucomex.cct.TConteiner"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Local">
+      <class ref="br.gov.serpro.pucomex.cct.Local"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:OperacaoConsolidacao">
+      <class ref="br.gov.serpro.pucomex.cct.OperacaoConsolidacao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:OperacaoDesunitizacao">
+      <class ref="br.gov.serpro.pucomex.cct.OperacaoDesunitizacao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:OperacaoUnitizacao">
+      <class ref="br.gov.serpro.pucomex.cct.OperacaoUnitizacao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:RecepcaoConteiner">
+      <class ref="br.gov.serpro.pucomex.cct.RecepcaoConteiner"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:RecepcaoDocumentoTransporte">
+      <class ref="br.gov.serpro.pucomex.cct.RecepcaoDocumentoTransporte"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:EntregaDocumentoTransporte">
+      <class ref="br.gov.serpro.pucomex.cct.EntregaDocumentoTransporte"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:EntregaConteiner">
+      <class ref="br.gov.serpro.pucomex.cct.EntregaConteiner"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TransitoSimplificadoEntrega">
+      <class ref="br.gov.serpro.pucomex.cct.TransitoSimplificadoEntrega"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:recepcaoNFE">
+      <class ref="br.gov.serpro.pucomex.cct.RecepcaoNFE"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:RecepcaoNFF">
+      <class ref="br.gov.serpro.pucomex.cct.RecepcaoNFF"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ManifestacaoExportacao">
+      <class ref="br.gov.serpro.pucomex.cct.ManifestacaoExportacao"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:ManifestacoesExportacao">
+      <class ref="br.gov.serpro.pucomex.cct.ManifestacoesExportacao"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:conteiner">
+      <class ref="br.gov.serpro.pucomex.cct.Conteiner"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ConteinerPesoBrutoExtend">
+      <class ref="br.gov.serpro.pucomex.cct.ConteinerPesoBrutoExtend"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:recepcoesNFF">
+      <class ref="br.gov.serpro.pucomex.cct.RecepcoesNFF"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:recepcoesNFE">
+      <class ref="br.gov.serpro.pucomex.cct.RecepcoesNFE"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:recebedor">
+      <class ref="br.gov.serpro.pucomex.cct.Recebedor"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:entregasConteineres">
+      <class ref="br.gov.serpro.pucomex.cct.EntregasConteineres"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:granel">
+      <class ref="br.gov.serpro.pucomex.cct.Granel"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TGranel">
+      <class ref="br.gov.serpro.pucomex.cct.TGranel"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:graneis">
+      <class ref="br.gov.serpro.pucomex.cct.Graneis"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:cargaSoltaVeiculo">
+      <class ref="br.gov.serpro.pucomex.cct.CargaSoltaVeiculo"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TCargaSoltaVeiculo">
+      <class ref="br.gov.serpro.pucomex.cct.TCargaSoltaVeiculo"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:documentos">
+      <class ref="br.gov.serpro.pucomex.cct.Documentos"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TDocumentoCarga">
+      <class ref="br.gov.serpro.pucomex.cct.TDocumentoCarga"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:entregasDocumentoCarga">
+      <class ref="br.gov.serpro.pucomex.cct.EntregasDocumentoCarga"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:EntregaDocumentoCarga">
+      <class ref="br.gov.serpro.pucomex.cct.EntregaDocumentoCarga"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:entregasDocumentoTransporte">
+      <class ref="br.gov.serpro.pucomex.cct.EntregasDocumentoTransporte"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:entregador">
+      <class ref="br.gov.serpro.pucomex.cct.Entregador"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:recepcoesDocumentoCarga">
+      <class ref="br.gov.serpro.pucomex.cct.RecepcoesDocumentoCarga"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:RecepcaoDocumentoCarga">
+      <class ref="br.gov.serpro.pucomex.cct.RecepcaoDocumentoCarga"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:recepcoesDocumentoTransporte">
+      <class ref="br.gov.serpro.pucomex.cct.RecepcoesDocumentoTransporte"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:recepcoesConteineres">
+      <class ref="br.gov.serpro.pucomex.cct.RecepcoesConteineres"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:conteineres">
+      <class ref="br.gov.serpro.pucomex.cct.Conteineres"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:documentosUnitizacao">
+      <class ref="br.gov.serpro.pucomex.cct.DocumentosUnitizacao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TDocumentoCargaUnitizacao">
+      <class ref="br.gov.serpro.pucomex.cct.TDocumentoCargaUnitizacao"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:embalagens">
+      <class ref="br.gov.serpro.pucomex.cct.Embalagens"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TEmbalagem">
+      <class ref="br.gov.serpro.pucomex.cct.TEmbalagem"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:cargasSoltasVeiculos">
+      <class ref="br.gov.serpro.pucomex.cct.CargasSoltasVeiculos"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TCargaSoltaVeiculoConsolidacao">
+      <class ref="br.gov.serpro.pucomex.cct.TCargaSoltaVeiculoConsolidacao"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:operacoesConsolidacao">
+      <class ref="br.gov.serpro.pucomex.cct.OperacoesConsolidacao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Transportador">
+      <class ref="br.gov.serpro.pucomex.cct.Transportador"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TLocal">
+      <class ref="br.gov.serpro.pucomex.cct.TLocal"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TLocalExtend">
+      <class ref="br.gov.serpro.pucomex.cct.TLocalExtend"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Coordenadas">
+      <class ref="br.gov.serpro.pucomex.cct.Coordenadas"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ConteinerExtend">
+      <class ref="br.gov.serpro.pucomex.cct.ConteinerExtend"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:DocumentoTransporte">
+      <class ref="br.gov.serpro.pucomex.cct.DocumentoTransporte"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TCargaSoltaVeiculoPesoBrutoExtend">
+      <class ref="br.gov.serpro.pucomex.cct.TCargaSoltaVeiculoPesoBrutoExtend"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TGranelPesoBrutoExtend">
+      <class ref="br.gov.serpro.pucomex.cct.TGranelPesoBrutoExtend"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Frete">
+      <class ref="br.gov.serpro.pucomex.cct.Frete"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TGranelManifestacao">
+      <class ref="br.gov.serpro.pucomex.cct.TGranelManifestacao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ItemNFF">
+      <class ref="br.gov.serpro.pucomex.cct.ItemNFF"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:IdentificacaoEmissor">
+      <class ref="br.gov.serpro.pucomex.cct.IdentificacaoEmissor"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TUnitizacao">
+      <class ref="br.gov.serpro.pucomex.cct.TUnitizacao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TDesunitizacao">
+      <class ref="br.gov.serpro.pucomex.cct.TDesunitizacao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TDocumentoCargaConsolidacao">
+      <class ref="br.gov.serpro.pucomex.cct.TDocumentoCargaConsolidacao"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TConhecimentoCarga">
+      <class ref="br.gov.serpro.pucomex.cct.TConhecimentoCarga"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:UnidadeMedida">
+      <typesafeEnumClass ref="br.gov.serpro.pucomex.cct.UnidadeMedida"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:UnidadeCarga">
+      <typesafeEnumClass ref="br.gov.serpro.pucomex.cct.UnidadeCarga"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="urn:wco:datamodel:WCO:GoodsDeclaration:1" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="wco.datamodel.wco.goodsdeclaration._1"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:DeclarationNoNF">
+      <class ref="wco.datamodel.wco.goodsdeclaration._1.DeclarationNoNF"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:DeclarationNFe">
+      <class ref="wco.datamodel.wco.goodsdeclaration._1.DeclarationNFe"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:Declaration">
+      <class ref="wco.datamodel.wco.goodsdeclaration._1.Declaration"/>
+    </bindings>
+  </bindings>
+  <bindings xmlns:tns="urn:wco:datamodel:WCO:GoodsDeclaration_DS:1" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="wco.datamodel.wco.goodsdeclaration_ds._1"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="~tns:ReferencedInvoiceIssueDateTimeType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.ReferencedInvoiceIssueDateTimeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:AdditionalDocumentIdentificationIDType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.AdditionalDocumentIdentificationIDType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:AdditionalInformationLimitDateTimeType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.AdditionalInformationLimitDateTimeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:AdditionalInformationStatementDescriptionTextType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.AdditionalInformationStatementDescriptionTextType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:AddressLineTextType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.AddressLineTextType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ClassificationIdentificationIDType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.ClassificationIdentificationIDType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:CommodityCommercialDescriptionTextType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.CommodityCommercialDescriptionTextType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:CommodityDescriptionTextType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.CommodityDescriptionTextType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:CommodityValueAmountType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.CommodityValueAmountType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:DeclarantIdentificationIDType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.DeclarantIdentificationIDType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:DeclarationIdentificationIDType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.DeclarationIdentificationIDType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:DeclarationOfficeIdentificationCodeType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.DeclarationOfficeIdentificationCodeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ExitOfficeIdentificationCodeType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.ExitOfficeIdentificationCodeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ExporterIdentificationIDType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.ExporterIdentificationIDType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ExporterNameTextType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.ExporterNameTextType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:GoodsMeasureNetNetWeightMeasureType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.GoodsMeasureNetNetWeightMeasureType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:GoodsMeasureTariffQuantityType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.GoodsMeasureTariffQuantityType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:GovernmentAgencyGoodsItemCustomsValueAmountType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.GovernmentAgencyGoodsItemCustomsValueAmountType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:GovernmentProcedureCurrentCodeType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.GovernmentProcedureCurrentCodeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ImporterNameTextType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.ImporterNameTextType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:InvoiceIdentificationIDType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.InvoiceIdentificationIDType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:InvoiceIssueDateTimeType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.InvoiceIssueDateTimeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:InvoiceLineInvoiceIdentificationIDType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.InvoiceLineInvoiceIdentificationIDType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:PackagingQuantityQuantityType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.PackagingQuantityQuantityType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:PreviousDocumentIdentificationIDType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.PreviousDocumentIdentificationIDType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ProductCharacteristicsDescriptionTextType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.ProductCharacteristicsDescriptionTextType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ProductCharacteristicsTypeCodeType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.ProductCharacteristicsTypeCodeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ProductIdentificationIDType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.ProductIdentificationIDType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ReferencedInvoiceIdentificationIDType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.ReferencedInvoiceIdentificationIDType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ReferencedInvoiceLineInvoiceIdentificationIDType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.ReferencedInvoiceLineInvoiceIdentificationIDType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:SubmitterIdentificationIDType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.SubmitterIdentificationIDType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TradeTermsDescriptionTextType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.TradeTermsDescriptionTextType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:UCRTraderAssignedReferenceIDType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.UCRTraderAssignedReferenceIDType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:WarehouseIdentificationIDType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.WarehouseIdentificationIDType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ProductCriteriaConformanceTypeCodeType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.ProductCriteriaConformanceTypeCodeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ProductCriteriaConformanceDescriptionTextType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.ProductCriteriaConformanceDescriptionTextType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:WarehouseLatitudeMeasureType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.WarehouseLatitudeMeasureType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:WarehouseLongitudeMeasureType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.WarehouseLongitudeMeasureType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:GoodsMeasureUnitDescriptionTextType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.GoodsMeasureUnitDescriptionTextType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:GovernmentAgencyGoodsItemValueWithExchangeCoverAmountType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.GovernmentAgencyGoodsItemValueWithExchangeCoverAmountType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:GovernmentAgencyGoodsItemValueWithoutExchangeCoverAmountType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.GovernmentAgencyGoodsItemValueWithoutExchangeCoverAmountType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:AdditionalDocumentItemIDType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.AdditionalDocumentItemIDType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:AdditionalDocumentQuantityQuantityType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.AdditionalDocumentQuantityQuantityType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:InvoiceQuantityQuantityType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.InvoiceQuantityQuantityType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:CommodityInvoiceBRLvalueAmountType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.CommodityInvoiceBRLvalueAmountType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:CommunicationIdentificationIDType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.CommunicationIdentificationIDType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ContactNameTextType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.ContactNameTextType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:AdditionalDocumentDrawbackHsClassificationTextType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.AdditionalDocumentDrawbackHsClassificationTextType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:AdditionalDocumentDrawbackRecipientIdTextType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.AdditionalDocumentDrawbackRecipientIdTextType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:AdditionalDocumentValueWithExchangeCoverAmountType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.AdditionalDocumentValueWithExchangeCoverAmountType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:AdditionalDocumentValueWithoutExchangeCoverAmountType">
+      <class ref="wco.datamodel.wco.goodsdeclaration_ds._1.AdditionalDocumentValueWithoutExchangeCoverAmountType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:AdditionalDocumentCategoryCodeType">
+      <typesafeEnumClass ref="wco.datamodel.wco.goodsdeclaration_ds._1.AdditionalDocumentCategoryCodeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:AdditionalInformationStatementTypeCodeType">
+      <typesafeEnumClass ref="wco.datamodel.wco.goodsdeclaration_ds._1.AdditionalInformationStatementTypeCodeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:AddressCountryCodeType">
+      <typesafeEnumClass ref="wco.datamodel.wco.goodsdeclaration_ds._1.AddressCountryCodeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:AddressCountrySubDivisionCodeType">
+      <typesafeEnumClass ref="wco.datamodel.wco.goodsdeclaration_ds._1.AddressCountrySubDivisionCodeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ClassificationIdentificationTypeCodeType">
+      <typesafeEnumClass ref="wco.datamodel.wco.goodsdeclaration_ds._1.ClassificationIdentificationTypeCodeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:CurrencyExchangeCurrencyTypeCodeType">
+      <typesafeEnumClass ref="wco.datamodel.wco.goodsdeclaration_ds._1.CurrencyExchangeCurrencyTypeCodeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:DestinationCountryCodeType">
+      <typesafeEnumClass ref="wco.datamodel.wco.goodsdeclaration_ds._1.DestinationCountryCodeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ProductIdentifierTypeCodeType">
+      <typesafeEnumClass ref="wco.datamodel.wco.goodsdeclaration_ds._1.ProductIdentifierTypeCodeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:TradeTermsConditionCodeType">
+      <typesafeEnumClass ref="wco.datamodel.wco.goodsdeclaration_ds._1.TradeTermsConditionCodeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:ReferencedInvoiceTypeCodeType">
+      <typesafeEnumClass ref="wco.datamodel.wco.goodsdeclaration_ds._1.ReferencedInvoiceTypeCodeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:GoodsMeasureTypeCodeType">
+      <typesafeEnumClass ref="wco.datamodel.wco.goodsdeclaration_ds._1.GoodsMeasureTypeCodeType"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:CommunicationTypeCodeType">
+      <typesafeEnumClass ref="wco.datamodel.wco.goodsdeclaration_ds._1.CommunicationTypeCodeType"/>
+    </bindings>
+  </bindings>
+</bindings>

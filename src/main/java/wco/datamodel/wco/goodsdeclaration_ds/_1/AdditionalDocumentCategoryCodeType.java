@@ -1,3 +1,10 @@
+//
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.0 
+// Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+// Gerado em: 2018.11.14 às 04:12:02 PM BRST 
+//
+
 
 package wco.datamodel.wco.goodsdeclaration_ds._1;
 
@@ -6,48 +13,48 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for AdditionalDocumentCategoryCodeType.
+ * <p>Classe Java de AdditionalDocumentCategoryCodeType.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * <p>
  * <pre>
- * &lt;simpleType name="AdditionalDocumentCategoryCodeType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}token">
- *     &lt;enumeration value="AC"/>
- *     &lt;enumeration value="DSG"/>
- *     &lt;enumeration value="DSI"/>
- *     &lt;enumeration value="DSIG"/>
- *     &lt;enumeration value="LPCO"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="AdditionalDocumentCategoryCodeType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}token"&gt;
+ *     &lt;enumeration value="AC"/&gt;
+ *     &lt;enumeration value="DSG"/&gt;
+ *     &lt;enumeration value="DSI"/&gt;
+ *     &lt;enumeration value="DSIG"/&gt;
+ *     &lt;enumeration value="LPCO"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
-@XmlType(name = "AdditionalDocumentCategoryCodeType", namespace = "urn:wco:datamodel:WCO:GoodsDeclaration_DS:1")
+@XmlType(name = "AdditionalDocumentCategoryCodeType")
 @XmlEnum
 public enum AdditionalDocumentCategoryCodeType {
 
 
     /**
-     * Drawback Suspens�o Comum
+     * Drawback Suspensão Comum
      * 
      */
     AC,
 
     /**
-     * Drawback Suspens�o Gen�rico
+     * Drawback Suspensão Genérico
      * 
      */
     DSG,
 
     /**
-     * Drawback Suspens�o Intermedi�rio
+     * Drawback Suspensão Intermediário
      * 
      */
     DSI,
 
     /**
-     * Drawback Suspens�o Intermedi�rio gen�rico
+     * Drawback Suspensão Intermediário genérico
      * 
      */
     DSIG,

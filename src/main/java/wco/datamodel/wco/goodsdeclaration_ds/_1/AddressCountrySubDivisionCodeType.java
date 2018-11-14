@@ -1,3 +1,10 @@
+//
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.0 
+// Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+// Gerado em: 2018.11.14 às 04:12:02 PM BRST 
+//
+
 
 package wco.datamodel.wco.goodsdeclaration_ds._1;
 
@@ -7,46 +14,46 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for AddressCountrySubDivisionCodeType.
+ * <p>Classe Java de AddressCountrySubDivisionCodeType.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * <p>
  * <pre>
- * &lt;simpleType name="AddressCountrySubDivisionCodeType">
- *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}token">
- *     &lt;enumeration value="BR-AC"/>
- *     &lt;enumeration value="BR-AL"/>
- *     &lt;enumeration value="BR-AM"/>
- *     &lt;enumeration value="BR-AP"/>
- *     &lt;enumeration value="BR-BA"/>
- *     &lt;enumeration value="BR-CE"/>
- *     &lt;enumeration value="BR-DF"/>
- *     &lt;enumeration value="BR-ES"/>
- *     &lt;enumeration value="BR-GO"/>
- *     &lt;enumeration value="BR-MA"/>
- *     &lt;enumeration value="BR-MG"/>
- *     &lt;enumeration value="BR-MS"/>
- *     &lt;enumeration value="BR-MT"/>
- *     &lt;enumeration value="BR-PA"/>
- *     &lt;enumeration value="BR-PB"/>
- *     &lt;enumeration value="BR-PE"/>
- *     &lt;enumeration value="BR-PI"/>
- *     &lt;enumeration value="BR-PR"/>
- *     &lt;enumeration value="BR-RJ"/>
- *     &lt;enumeration value="BR-RN"/>
- *     &lt;enumeration value="BR-RO"/>
- *     &lt;enumeration value="BR-RR"/>
- *     &lt;enumeration value="BR-RS"/>
- *     &lt;enumeration value="BR-SC"/>
- *     &lt;enumeration value="BR-SE"/>
- *     &lt;enumeration value="BR-SP"/>
- *     &lt;enumeration value="BR-TO"/>
- *   &lt;/restriction>
- * &lt;/simpleType>
+ * &lt;simpleType name="AddressCountrySubDivisionCodeType"&gt;
+ *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}token"&gt;
+ *     &lt;enumeration value="BR-AC"/&gt;
+ *     &lt;enumeration value="BR-AL"/&gt;
+ *     &lt;enumeration value="BR-AM"/&gt;
+ *     &lt;enumeration value="BR-AP"/&gt;
+ *     &lt;enumeration value="BR-BA"/&gt;
+ *     &lt;enumeration value="BR-CE"/&gt;
+ *     &lt;enumeration value="BR-DF"/&gt;
+ *     &lt;enumeration value="BR-ES"/&gt;
+ *     &lt;enumeration value="BR-GO"/&gt;
+ *     &lt;enumeration value="BR-MA"/&gt;
+ *     &lt;enumeration value="BR-MG"/&gt;
+ *     &lt;enumeration value="BR-MS"/&gt;
+ *     &lt;enumeration value="BR-MT"/&gt;
+ *     &lt;enumeration value="BR-PA"/&gt;
+ *     &lt;enumeration value="BR-PB"/&gt;
+ *     &lt;enumeration value="BR-PE"/&gt;
+ *     &lt;enumeration value="BR-PI"/&gt;
+ *     &lt;enumeration value="BR-PR"/&gt;
+ *     &lt;enumeration value="BR-RJ"/&gt;
+ *     &lt;enumeration value="BR-RN"/&gt;
+ *     &lt;enumeration value="BR-RO"/&gt;
+ *     &lt;enumeration value="BR-RR"/&gt;
+ *     &lt;enumeration value="BR-RS"/&gt;
+ *     &lt;enumeration value="BR-SC"/&gt;
+ *     &lt;enumeration value="BR-SE"/&gt;
+ *     &lt;enumeration value="BR-SP"/&gt;
+ *     &lt;enumeration value="BR-TO"/&gt;
+ *   &lt;/restriction&gt;
+ * &lt;/simpleType&gt;
  * </pre>
  * 
  */
-@XmlType(name = "AddressCountrySubDivisionCodeType", namespace = "urn:wco:datamodel:WCO:GoodsDeclaration_DS:1")
+@XmlType(name = "AddressCountrySubDivisionCodeType")
 @XmlEnum
 public enum AddressCountrySubDivisionCodeType {
 

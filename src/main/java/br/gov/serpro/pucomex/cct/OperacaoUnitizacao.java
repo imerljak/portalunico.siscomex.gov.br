@@ -1,3 +1,10 @@
+//
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.3.0 
+// Consulte <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+// Gerado em: 2018.11.14 às 04:12:02 PM BRST 
+//
+
 
 package br.gov.serpro.pucomex.cct;
 
@@ -5,142 +12,78 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 
 /**
- * <p>Java class for OperacaoUnitizacao complex type.
+ * <p>Classe Java de OperacaoUnitizacao complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * 
  * <pre>
- * &lt;complexType name="OperacaoUnitizacao">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="identificacaoResponsavelUnitizacao" type="{http://www.pucomex.serpro.gov.br/cct}CNPJ"/>
- *         &lt;element name="local" type="{http://www.pucomex.serpro.gov.br/cct}TLocalExtend"/>
- *         &lt;element name="unitizacoes">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="unitizacao" type="{http://www.pucomex.serpro.gov.br/cct}TUnitizacao"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="OperacaoUnitizacao"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="identificacaoResponsavelUnitizacao" type="{http://www.pucomex.serpro.gov.br/cct}CNPJ"/&gt;
+ *         &lt;element name="local" type="{http://www.pucomex.serpro.gov.br/cct}TLocalExtend"/&gt;
+ *         &lt;element name="unitizacoes"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="unitizacao" type="{http://www.pucomex.serpro.gov.br/cct}TUnitizacao"/&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "OperacaoUnitizacao", namespace = "http://www.pucomex.serpro.gov.br/cct", propOrder = {
+@XmlType(name = "OperacaoUnitizacao", propOrder = {
     "identificacaoResponsavelUnitizacao",
     "local",
     "unitizacoes"
 })
+@Builder(builderMethodName = "operacaoUnitizacaoBuilder")
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class OperacaoUnitizacao {
 
-    @XmlElement(namespace = "http://www.pucomex.serpro.gov.br/cct", required = true)
+    @XmlElement(required = true)
     protected String identificacaoResponsavelUnitizacao;
-    @XmlElement(namespace = "http://www.pucomex.serpro.gov.br/cct", required = true)
+    @XmlElement(required = true)
     protected TLocalExtend local;
-    @XmlElement(namespace = "http://www.pucomex.serpro.gov.br/cct", required = true)
+    @XmlElement(required = true)
     protected OperacaoUnitizacao.Unitizacoes unitizacoes;
 
-    /**
-     * Gets the value of the identificacaoResponsavelUnitizacao property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getIdentificacaoResponsavelUnitizacao() {
-        return identificacaoResponsavelUnitizacao;
-    }
 
     /**
-     * Sets the value of the identificacaoResponsavelUnitizacao property.
+     * <p>Classe Java de anonymous complex type.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setIdentificacaoResponsavelUnitizacao(String value) {
-        this.identificacaoResponsavelUnitizacao = value;
-    }
-
-    /**
-     * Gets the value of the local property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link TLocalExtend }
-     *     
-     */
-    public TLocalExtend getLocal() {
-        return local;
-    }
-
-    /**
-     * Sets the value of the local property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link TLocalExtend }
-     *     
-     */
-    public void setLocal(TLocalExtend value) {
-        this.local = value;
-    }
-
-    /**
-     * Gets the value of the unitizacoes property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link OperacaoUnitizacao.Unitizacoes }
-     *     
-     */
-    public OperacaoUnitizacao.Unitizacoes getUnitizacoes() {
-        return unitizacoes;
-    }
-
-    /**
-     * Sets the value of the unitizacoes property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link OperacaoUnitizacao.Unitizacoes }
-     *     
-     */
-    public void setUnitizacoes(OperacaoUnitizacao.Unitizacoes value) {
-        this.unitizacoes = value;
-    }
-
-
-    /**
-     * <p>Java class for anonymous complex type.
-     * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
+     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="unitizacao" type="{http://www.pucomex.serpro.gov.br/cct}TUnitizacao"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="unitizacao" type="{http://www.pucomex.serpro.gov.br/cct}TUnitizacao"/&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -149,34 +92,14 @@ public class OperacaoUnitizacao {
     @XmlType(name = "", propOrder = {
         "unitizacao"
     })
+    @Builder(builderMethodName = "unitizacoesBuilder")
+    @AllArgsConstructor
+    @NoArgsConstructor
+    @Data
     public static class Unitizacoes {
 
-        @XmlElement(namespace = "http://www.pucomex.serpro.gov.br/cct", required = true)
+        @XmlElement(required = true)
         protected TUnitizacao unitizacao;
-
-        /**
-         * Gets the value of the unitizacao property.
-         * 
-         * @return
-         *     possible object is
-         *     {@link TUnitizacao }
-         *     
-         */
-        public TUnitizacao getUnitizacao() {
-            return unitizacao;
-        }
-
-        /**
-         * Sets the value of the unitizacao property.
-         * 
-         * @param value
-         *     allowed object is
-         *     {@link TUnitizacao }
-         *     
-         */
-        public void setUnitizacao(TUnitizacao value) {
-            this.unitizacao = value;
-        }
 
     }
 
