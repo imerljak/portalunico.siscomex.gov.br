@@ -4,7 +4,7 @@
 	xmlns:tns="http://www.pucomex.serpro.gov.br/cct">
 
 	<include schemaLocation="../TipoComplexo.xsd" />
-	<include schemaLocation="./transitoSimplificadoEntrega.xsd"/>
+	<include schemaLocation="transitoSimplificadoEntrega.xsd"/>
 
     <element name="recebedor">
 		<complexType>

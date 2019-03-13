@@ -8,9 +8,37 @@
     <xs:restriction base="xs:token">
 		<xs:enumeration value="AC"><xs:annotation><xs:documentation>Drawback Suspensão Comum</xs:documentation></xs:annotation></xs:enumeration>
 		<xs:enumeration value="DSG"><xs:annotation><xs:documentation>Drawback Suspensão Genérico</xs:documentation></xs:annotation></xs:enumeration>
-		<xs:enumeration value="DSI"><xs:annotation><xs:documentation>Drawback Suspensão Intermediário</xs:documentation></xs:annotation></xs:enumeration>
+		<xs:enumeration value="DBSI"><xs:annotation><xs:documentation>Drawback Suspensão Intermediário</xs:documentation></xs:annotation></xs:enumeration>
 		<xs:enumeration value="DSIG"><xs:annotation><xs:documentation>Drawback Suspensão Intermediário genérico</xs:documentation></xs:annotation></xs:enumeration>
+		
+		<xs:enumeration value="DSEC"><xs:annotation><xs:documentation>Drawback Suspensão Embarcação Comum</xs:documentation></xs:annotation></xs:enumeration>
+		<xs:enumeration value="DSEG"><xs:annotation><xs:documentation>Drawback Suspensão Embarcação Genérico</xs:documentation></xs:annotation></xs:enumeration>
+		<xs:enumeration value="DSMC"><xs:annotation><xs:documentation>Drawback Suspensão Fornecimento no Mercado Interno Comum</xs:documentation></xs:annotation></xs:enumeration>
+		<xs:enumeration value="DSMG"><xs:annotation><xs:documentation>Drawback Suspensão Fornecimento no Mercado Interno Genérico</xs:documentation></xs:annotation></xs:enumeration>
+		
+		<xs:enumeration value="DBI"><xs:annotation><xs:documentation>Drawback Isenção</xs:documentation></xs:annotation></xs:enumeration>
+		<xs:enumeration value="DBII"><xs:annotation><xs:documentation>Drawback Isenção Intermediário</xs:documentation></xs:annotation></xs:enumeration>
+
+		
 		<xs:enumeration value="LPCO"><xs:annotation><xs:documentation>LPCO</xs:documentation></xs:annotation></xs:enumeration>
+		
+		<!-- Reexportação e Substituição de Mercadoria Importada (Enquadramento tipo indenização) -->
+		<xs:enumeration value="DSI"><xs:annotation><xs:documentation>Declaração Simplificada de Importação</xs:documentation></xs:annotation></xs:enumeration>
+		<xs:enumeration value="DSIF"><xs:annotation><xs:documentation>Declaração Simplificada de Importação - Formulário</xs:documentation></xs:annotation></xs:enumeration>
+		<xs:enumeration value="DI"><xs:annotation><xs:documentation>Declaração de Importação</xs:documentation></xs:annotation></xs:enumeration>
+		<xs:enumeration value="EDBV"><xs:annotation><xs:documentation>e-DBV</xs:documentation></xs:annotation></xs:enumeration>
+		
+		<!-- Transformação de exportação temporária em DU-E definitiva -->
+		<xs:enumeration value="DDE"><xs:annotation><xs:documentation>DDE</xs:documentation></xs:annotation></xs:enumeration>
+		<xs:enumeration value="DE"><xs:annotation><xs:documentation>DE</xs:documentation></xs:annotation></xs:enumeration>
+		
+		<!--  Indenização -->
+		<xs:enumeration value="DSE"><xs:annotation><xs:documentation>DSE</xs:documentation></xs:annotation></xs:enumeration>
+		<xs:enumeration value="RE"><xs:annotation><xs:documentation>RE</xs:documentation></xs:annotation></xs:enumeration>
+		
+		<!--  Indenização e transformação de exportação temporária em DU-E definitiva (informar também item da DU-E no tag ItemID)-->
+		<xs:enumeration value="DUE"><xs:annotation><xs:documentation>DU-E</xs:documentation></xs:annotation></xs:enumeration>
+		
 	</xs:restriction>
   </xs:simpleType>
   
@@ -45,6 +73,7 @@
 			<xs:enumeration value="PRI"><xs:annotation><xs:documentation>Prioridade Carga</xs:documentation></xs:annotation></xs:enumeration>
 			<xs:enumeration value="TRA"><xs:annotation><xs:documentation>Caso Especial de Transporte</xs:documentation></xs:annotation></xs:enumeration>
 			<xs:enumeration value="AVD"><xs:annotation><xs:documentation>Justificativa depuração estatística qtd/peso/valor - Escolhendo esta opção deve-se também preencher statementDescription no level GovernmentAgencyGoodsItem/AdditionalInformation</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="FGH"><xs:annotation><xs:documentation>Justificativa dispensa NF por outros motivos</xs:documentation></xs:annotation></xs:enumeration>
 		</xs:restriction>
 	</xs:simpleType>
   
@@ -60,19 +89,19 @@
 			  <xs:enumeration value="2002"><xs:annotation><xs:documentation>Situação Especial/Embarque antecipado</xs:documentation></xs:annotation></xs:enumeration>
 			  <xs:enumeration value="2003"><xs:annotation><xs:documentation>Situação Especial/Sem saída da mercadoria do país</xs:documentation></xs:annotation></xs:enumeration>
 			  
-			  <xs:enumeration value="4001"><xs:annotation><xs:documentation>Caso Especial Transporte/Meios próprios ou por reboque</xs:documentation></xs:annotation></xs:enumeration>
+			  <xs:enumeration value="4001"><xs:annotation><xs:documentation>Caso Especial Transporte/Meios próprios</xs:documentation></xs:annotation></xs:enumeration>
 			  <xs:enumeration value="4002"><xs:annotation><xs:documentation>Caso Especial Transporte/Dutos</xs:documentation></xs:annotation></xs:enumeration>
 			  <xs:enumeration value="4003"><xs:annotation><xs:documentation>Caso Especial Transporte/Linhas de transmissão</xs:documentation></xs:annotation></xs:enumeration>
-			  <xs:enumeration value="4004"><xs:annotation><xs:documentation>Caso Especial Transporte/Em mãos</xs:documentation></xs:annotation></xs:enumeration>			  
+			  <xs:enumeration value="4004"><xs:annotation><xs:documentation>Caso Especial Transporte/Em mãos</xs:documentation></xs:annotation></xs:enumeration>
+			  <xs:enumeration value="4005"><xs:annotation><xs:documentation>Caso Especial Transporte/Por reboque</xs:documentation></xs:annotation></xs:enumeration>
 			   <!-- Declaration Level -->
 				 
 				 
 				 
 				 <!-- Invoice Level -->
-				<xs:enumeration value="3001"><xs:annotation><xs:documentation>Motivo Dispensa NF/Bagagem desacompanhada</xs:documentation></xs:annotation></xs:enumeration>
-			  <xs:enumeration value="3002"><xs:annotation><xs:documentation>Motivo Dispensa NF/Bens de viajante não incluídos no conceito de bagagem</xs:documentation></xs:annotation></xs:enumeration>
-			  <xs:enumeration value="3003"><xs:annotation><xs:documentation>Motivo Dispensa NF/Retorno de mercadoria ao exterior antes do registro da DI</xs:documentation></xs:annotation></xs:enumeration>
 			  <xs:enumeration value="3004"><xs:annotation><xs:documentation>Motivo Dispensa NF/Embarque antecipado</xs:documentation></xs:annotation></xs:enumeration>
+			  
+			  
 			   <!-- Invoice Level -->
 			   
 			   
@@ -913,6 +942,18 @@
     </xs:simpleContent>
   </xs:complexType>
   
+   <xs:complexType name="InvoiceCustomsValueAmountType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  
+   <xs:complexType name="GovernmentAgencyGoodsItemFinancedValueAmountType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  
   <xs:simpleType name="GovernmentAgencyGoodsItemSequenceNumericType">
     <xs:restriction base="xs:decimal"/>
   </xs:simpleType>
@@ -1137,13 +1178,12 @@
     </xs:simpleContent>
   </xs:complexType>
   
-  <xs:complexType name="ProductCriteriaConformanceTypeCodeType">
-     <xs:simpleContent>
-      <xs:extension base="xs:string">
-        <xs:attribute name="schemeID" type="xs:token" use="optional"/>
-      </xs:extension>
-    </xs:simpleContent>
-  </xs:complexType>
+  <xs:simpleType name="ProductCriteriaConformanceTypeCodeType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="1"><xs:annotation><xs:documentation>Amparada por CCPTC</xs:documentation></xs:annotation></xs:enumeration>
+			<xs:enumeration value="2"><xs:annotation><xs:documentation>Amparada por CCROM</xs:documentation></xs:annotation></xs:enumeration>			
+		</xs:restriction>
+	</xs:simpleType>
   
 	<xs:complexType name="ProductCriteriaConformanceDescriptionTextType">
 		<xs:simpleContent>
@@ -1324,6 +1364,40 @@
   </xs:complexType>
   
   <xs:complexType name="AdditionalDocumentValueWithoutExchangeCoverAmountType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  
+  <xs:complexType name="PreviousDocumentAmountAmountType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  
+  <xs:simpleType name="PreviousDocumentCategoryCodeType">
+    <xs:restriction base="xs:token">
+		<!-- Drawback devolução -->
+		<xs:enumeration value="DSI"><xs:annotation><xs:documentation>Declaração Simplificada de Importação</xs:documentation></xs:annotation></xs:enumeration>
+		<xs:enumeration value="DSIF"><xs:annotation><xs:documentation>Declaração Simplificada de Importação - Formulário</xs:documentation></xs:annotation></xs:enumeration>
+		<xs:enumeration value="DI"><xs:annotation><xs:documentation>Declaração de Importação</xs:documentation></xs:annotation></xs:enumeration>
+		<xs:enumeration value="EDBV"><xs:annotation><xs:documentation>e-DBV</xs:documentation></xs:annotation></xs:enumeration>
+	</xs:restriction>
+  </xs:simpleType>
+  
+  <xs:complexType name="PreviousDocumentItemIDType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  
+  <xs:complexType name="PreviousDocumentQuantityQuantityType">
+    <xs:simpleContent>
+      <xs:extension base="xs:decimal"/>
+    </xs:simpleContent>
+  </xs:complexType>
+  
+  <xs:complexType name="ProductCriteriaConformanceQuantityQuantityType">
     <xs:simpleContent>
       <xs:extension base="xs:decimal"/>
     </xs:simpleContent>

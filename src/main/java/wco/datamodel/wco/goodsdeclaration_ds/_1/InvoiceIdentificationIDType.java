@@ -14,29 +14,29 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 /**
  * 
  * 	
- * 		Quando uma Nota Fiscal for fomul·rio, enviar neste campo como identificador o seguinte formato:
+ * 		Quando uma Nota Fiscal for fomul√°rio, enviar neste campo como identificador o seguinte formato:
  * 	
- * 	Prefixo F para determinar que È nota Formul·rio
+ * 	Prefixo F para determinar que √© nota Formul√°rio
  * 		1 caracter
- * 	cUF - CÛdigo da UF do emitente do Documento Fiscal 
+ * 	cUF - C√≥digo da UF do emitente do Documento Fiscal 
  * 		2 caracteres
- * 	AAMM - Ano e MÍs de emiss„o da NF-e 
+ * 	AAMM - Ano e M√™s de emiss√£o da NF-e 
  * 		4 caracteres
  * 	CNPJ - CNPJ do emitente 
  * 		14 caracteres
  * 	mod - Modelo do Documento Fiscal 
  * 		2 caracteres
- * 	serie - SÈrie do Documento Fiscal 
+ * 	serie - S√©rie do Documento Fiscal 
  * 		3 caracteres
- * 	nNF - N˙mero do Documento Fiscal 
+ * 	nNF - N√∫mero do Documento Fiscal 
  * 	9 caracteres
- * 	tpEmis ñ forma de emiss„o da NF-e
+ * 	tpEmis ¬ñ forma de emiss√£o da NF-e
  * 		1 caracteres
- * 	cNF - CÛdigo NumÈrico que compıe a Chave de Acesso 
+ * 	cNF - C√≥digo Num√©rico que comp√µe a Chave de Acesso 
  * 		8 caracteres
  * 
  * 		
- * 		O identificador da Nota Fiscal Formul·rio seguir· regras semelhantes ao da NFe. Apenas o primeiro caracter que deve ser um F e n„o È necess·rio o digito verificador ao final.
+ * 		O identificador da Nota Fiscal Formul√°rio seguir√° regras semelhantes ao da NFe. Apenas o primeiro caracter que deve ser um F e n√£o √© necess√°rio o digito verificador ao final.
  * 		Para maiores detalhes do preenchimento, seguir o manual da NF-e. http://www.nfe.fazenda.gov.br/portal/listaConteudo.aspx?tipoConteudo=33ol5hhSYZk=
  * 	
  * 

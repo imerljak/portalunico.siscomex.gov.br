@@ -93,7 +93,7 @@
 	  			<element name="transporteProprio" minOccurs="1" maxOccurs="1">
 		    		<complexType>
 		      			<sequence>
-		        			<element name="dadosCarga" type="tns:DadosCarga" minOccurs="1" maxOccurs="unbounded" />
+		      				<element name="consignatario" type="tns:Consignatario" minOccurs="1" maxOccurs="1" />
 		      			</sequence>
 		    		</complexType>
   		  		</element>
@@ -113,23 +113,26 @@
 
 			<element name="frete" type="tns:Frete" minOccurs="0" maxOccurs="1" />
 
-			<element name="cargas">
-	    		<complexType>
-	      			<sequence>
-	        			<element name="dadosCarga" type="tns:DadosCarga" minOccurs="1" maxOccurs="999" />
-	      			</sequence>
-	    		</complexType>
-  			</element>
-
+   			<sequence>
+       			<element name="consignatario" type="tns:Consignatario" minOccurs="1" maxOccurs="1" />
+       		</sequence>
 		</sequence>
 	</complexType>
-
-	<complexType name="DadosCarga">
+	
+	<complexType name="Consignatario">
 		<sequence>
 			<element name="consignadoAOrdem" type="tns:SimNao" minOccurs="1" maxOccurs="1" />
 			<element name="nomeConsignatario" type="tns:StringBasica60" minOccurs="0" maxOccurs="1" />
 			<element name="enderecoConsignatario" type="tns:StringBasica120" minOccurs="0" maxOccurs="1" />
 			<element name="paisDestino" type="tns:Pais" minOccurs="0" maxOccurs="1" />
+			<sequence>
+				<element name="dadosCarga" type="tns:DadosCarga" minOccurs="1" maxOccurs="999" />
+			</sequence>
+		</sequence>
+	</complexType>
+
+	<complexType name="DadosCarga">
+		<sequence>
 			<choice>
 				<sequence>
 					<element ref="tns:conteiner"/>
