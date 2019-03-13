@@ -3,9 +3,8 @@ package br.gov.siscomex.portalunico.cct.consultardocumentotransporteespecifico;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import org.apache.commons.lang.builder.EqualsBuilder;
-import org.apache.commons.lang.builder.HashCodeBuilder;
-import org.apache.commons.lang.builder.ToStringBuilder;
+
+import java.util.Objects;
 
 public class Ra {
 
@@ -34,24 +33,23 @@ public class Ra {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("codigo", codigo).append("descricao", descricao).toString();
+        return "Ra{" +
+                "codigo='" + codigo + '\'' +
+                ", descricao='" + descricao + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Ra ra = (Ra) o;
+        return Objects.equals(codigo, ra.codigo) &&
+                Objects.equals(descricao, ra.descricao);
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(codigo).append(descricao).toHashCode();
+        return Objects.hash(codigo, descricao);
     }
-
-    @Override
-    public boolean equals(Object other) {
-        if (other == this) {
-            return true;
-        }
-        if ((other instanceof Ra) == false) {
-            return false;
-        }
-        Ra rhs = ((Ra) other);
-        return new EqualsBuilder().append(codigo, rhs.codigo).append(descricao, rhs.descricao).isEquals();
-    }
-
 }
